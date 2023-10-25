@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oishi Izakaya, Book a table</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <meta name="description" content="Experience Oishi Izakaya - a haven of authentic Japanese flavors and ambiance. Indulge in the delicacies of traditional Japanese cuisine and drinks.">
+    <meta name="keywords" content="Oishi, Izakaya, Japanese, Tavern, Sake, Cuisine, Authentic, Tokyo Flavors">
+    <meta name="author" content="Igor Dinuzzi">
+    <meta name="robots" content="index, follow">
+    <meta name="og:title" content="Oishi Izakaya - Authentic Japanese Flavors and Ambiance">
+    <meta name="og:description" content="Experience Oishi Izakaya - a haven of authentic Japanese flavors and ambiance. Indulge in the delicacies of traditional Japanese cuisine and drinks.">
+    <meta name="og:url" content="https://igordinuzzi.github.io/oishiizakaya/">
+    <meta name="og:type" content="website">
+    <meta name="og:site_name" content="Oishi Izakaya">    
+</head>
+<body>
+    <header>
+        <div>
+            <a href="index.html" aria-label="Oishi Izakaya Home"><img src="img/oishi-logo.svg" alt="oishi logo"></a>
+        </div>
+        <nav>
+            <a href="menu.html" aria-label="View our menu">Menu</a>
+            <a href="reservation.html" aria-label="Reserve a table at our izakaya">Book a table</a>
+            <a href="about.html" aria-label="Learn more about our history and values">About Oishi</a>
+            <a href="contact.html" aria-label="Contact us">Contact us</a>
+        </nav>
+    </header>
+    <main>
+        <div>
+            <h1>Discover Oishi Izakaya: A Culinary Journey</h1>
+            <p>Dive deep into the rich culinary traditions of Oishi Izakaya. 
+                This book unveils the secrets behind our iconic dishes, offering readers 
+                a glimpse into the heart and soul of our kitchen. Embark on a gastronomic adventure 
+                and explore the essence of authentic Izakaya dining.</p>
+
+            </div>
+            <form id="reservationForm">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required pattern="[A-Za-z\s]+" placeholder="Your name...">
+            
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required placeholder="Your email...">
+            
+                <label for="date">Reservation Date:</label>
+                <input type="date" id="date" name="date" required>
+            
+                <label for="time">Reservation Time:</label>
+                    <select id="time" name="time" required>
+                    <option value="18:00">6:00 PM</option>
+                    <option value="18:15">6:15 PM</option>
+                    <option value="18:30">6:30 PM</option>
+                    <option value="18:45">6:45 PM</option>
+                    <option value="19:00">7:00 PM</option>
+                    <option value="19:15">7:15 PM</option>
+                    <option value="19:30">7:30 PM</option>
+                    <option value="19:45">7:45 PM</option>
+                    <option value="20:00">8:00 PM</option>
+                    <option value="20:15">8:15 PM</option>
+                    <option value="20:30">8:30 PM</option>
+                    <option value="20:45">8:45 PM</option>
+                    <option value="21:00">9:00 PM</option>
+                    <option value="21:15">9:15 PM</option>
+                    <option value="21:30">9:30 PM</option>
+                    <option value="21:45">9:45 PM</option>
+                    <option value="22:00">10:00 PM</option>
+                    <option value="22:15">10:15 PM</option>
+                    <option value="22:30">10:30 PM</option>
+                    <option value="22:45">10:45 PM</option>
+                    <option value="23:00">11:00 PM</option>
+                    <option value="23:15">11:15 PM</option>
+                    <option value="23:30">11:30 PM</option>
+                    <option value="23:45">11:45 PM</option>
+                    </select>
+
+            
+                <label for="number">Number of Guests:</label>
+                <input type="number" id="number" name="number" required min="1" max="6" placeholder="Up to 6 attendees">
+            
+                <input type="submit" value="Submit">
+            </form>
+    </main>
+
+    <footer>
+        <div class="address">
+            <a href="https://maps.app.goo.gl/okZDz75m9zWryP996" target="_blank"><p>Oishi Izakaya</p></a>
+            <p>2-chōme-3 Asakusa</p>
+            <p>Taito City</p>
+            <p>Tokyo 111-0032</p>
+        </div>
+    
+        <div class="contact">
+            <p>Contact Us:</p>
+            <a href="tel:+81123456789">Phone: +81 123-456-789</a>
+        </div>
+    
+        <div class="cta">
+            <a href="reservation.html">Book Your Table Now!</a>
+        </div>
+    
+        <div class="social-icons">
+            <a href="https://www.facebook.com/" target="_blank" aria-label="Link to our Facebook page">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://twitter.com/" target="_blank" aria-label="Link to our Twitter page">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://www.instagram.com/" target="_blank" aria-label="Link to our Instagram page">
+                <i class="fab fa-instagram"></i>
+            </a>
+        </div>
+    
+        <div class="copyright">
+            <p>&copy; 2023 Oishi Izakaya. All Rights Reserved. <a href="https://github.com/igordinuzzi/" target="_blank">Made by Igor ❤️</a></p>
+        </div>
+    </footer>
+    
+    <script src="script/script.js"></script>  
+</body>
+</html>

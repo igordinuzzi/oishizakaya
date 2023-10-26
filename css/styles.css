@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitter&family=Karla:wght@300;400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  line-height: 1.5;
+  color: #282c45; /* Default text color */
+  background-color: #f5f5f5; /* Light gray background */
+}
+
+/* Fonts */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  
+  h1 {
+    font-size: 48px;
+    font-family: 'Bitter', serif;
+  }
+  
+  h2 {
+    font-size: 32px;
+    font-family: 'Karla', sans-serif;
+  }
+  
+  h3 {
+    font-size: 24px;
+    font-family: 'Karla', sans-serif;
+
+  }
+  
+  p {
+    margin-bottom: 15px;
+    font-size: 16px;
+    font-family: 'Karla', sans-serif;
+  }
+  
+  /* Navigation */
+  nav {
+    font-size: 16px;
+    font-family: 'Karla', sans-serif;
+  }
+
+  /* Links */
+
+  a {
+    text-decoration: none;
+    color: #76141C;
+    font-family: 'Karla', sans-serif;
+  }
+  
+  a:hover {
+    text-decoration: none;
+    color: #141E76;
+  }
+
+ /* Buttons */
+
+ .btn {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  text-align: center;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  background-color: #76141C;
+  color: #fff;
+  font-family: 'Karla', sans-serif;
+  font-size: 16px;
+}
+
+.btn:hover {
+  background-color: #141E76;
+  color: #fff;
+}
+
+ /* Reviews */
+
+ .review-author {
+  font-size: 12px;
+  font-family: 'Bitter', serif;
+ }
+
+ .review-content {
+  font-size: 16px;
+  font-family: 'Karla', sans-serif;
+ }
+
+  /* Menu */
+
+  .item {
+  font-family: 'Karla', sans-serif ;    
+  }
+
+  .item-name {
+    font-weight: bold;
+    font-size: 20px;
+  }
+
+  .item-description {
+    color: #666;
+  }
+
+  .tab {
+    font-family: 'Karla', sans-serif;
+  }
+
+
+/* Style for the tab */
+.tab {
+  display: inline-block;    
+  padding: 10px 20px;      
+  cursor: pointer;          
+  background-color: #f0f0f0; 
+  border: 1px solid #ccc;  
+  transition: background-color 0.3s; 
+  margin-right: 10px;      
+  border-radius: 5px;     
+  text-align: center;     
+}
+
+.tab:hover {
+  background-color: #e0e0e0; 
+}
+
+.tab.active {
+  background-color: #141E76; 
+  color: white;           
+}
+
+
+/* General styling for labels */
+label {
+  display: block;       
+  margin: 15px 0 5px;  
+  font-weight: bold;  
+  font-size: 16px;    
+  color: #333;
+  font-family: 'Karla', sans-serif;      
+}
+
+/* General styling for input fields */
+input {
+  width: 20%;         
+  padding: 10px;      
+  border: 1px solid #ccc; 
+  border-radius: 4px;  
+  font-size: 14px;    
+  color: #555;        
+  box-sizing: border-box; 
+  transition: border-color 0.3s; 
+}
+
+/* Effect for focusing on input fields */
+input:focus {
+  border-color: #141E76; 
+  outline: none;    
+}
+
+/* Styling specifically for the placeholder text in inputs */
+input::placeholder {
+  color: #999;
+}      
+
+/* Styling for the submit input */
+input[type="submit"] {
+  background-color: #76141C;  
+  color: white;               
+  padding: 10px 20px;        
+  border: none;              
+  border-radius: 5px;         
+  cursor: pointer;            
+  font-size: 16px;            
+  transition: background-color 0.3s; 
+}
+
+/* Hover effect for the submit input */
+input[type="submit"]:hover {
+  background-color: #141E76;  
+}
+
+

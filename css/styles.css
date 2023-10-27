@@ -10,6 +10,8 @@ body {
   line-height: 1.5;
   color: #282c45; /* Default text color */
   background-color: #f5f5f5; /* Light gray background */
+  font-family: 'Karla', sans-serif;
+  font-size: 16px;
 }
 
 /* Fonts */
@@ -25,25 +27,18 @@ h1, h2, h3, h4, h5, h6 {
   
   h2 {
     font-size: 32px;
-    font-family: 'Karla', sans-serif;
   }
   
   h3 {
     font-size: 24px;
-    font-family: 'Karla', sans-serif;
-
   }
   
   p {
     margin-bottom: 15px;
-    font-size: 16px;
-    font-family: 'Karla', sans-serif;
   }
   
   /* Navigation */
   nav {
-    font-size: 16px;
-    font-family: 'Karla', sans-serif;
   }
 
   /* Links */
@@ -51,7 +46,6 @@ h1, h2, h3, h4, h5, h6 {
   a {
     text-decoration: none;
     color: #76141C;
-    font-family: 'Karla', sans-serif;
   }
   
   a:hover {
@@ -90,13 +84,11 @@ h1, h2, h3, h4, h5, h6 {
 
  .review-content {
   font-size: 16px;
-  font-family: 'Karla', sans-serif;
  }
 
   /* Menu */
 
-  .item {
-  font-family: 'Karla', sans-serif ;    
+  .item {  
   }
 
   .item-name {
@@ -109,7 +101,6 @@ h1, h2, h3, h4, h5, h6 {
   }
 
   .tab {
-    font-family: 'Karla', sans-serif;
   }
 
 
@@ -141,9 +132,7 @@ label {
   display: block;       
   margin: 15px 0 5px;  
   font-weight: bold;  
-  font-size: 16px;    
   color: #333;
-  font-family: 'Karla', sans-serif;      
 }
 
 /* General styling for input fields */

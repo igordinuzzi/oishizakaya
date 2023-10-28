@@ -22,11 +22,17 @@
         <div>
             <a href="index.html" aria-label="Oishi Izakaya Home"><img src="img/oishi-logo.svg" alt="oishi logo"></a>
         </div>
-        <nav>
-            <a href="menu.html" aria-label="View our menu">Menu</a>
-            <a href="reservation.html" aria-label="Reserve a table at our izakaya">Book a table</a>
-            <a href="about.html" aria-label="Learn more about our history and values">About Oishi</a>
-            <a href="contact.html" aria-label="Contact us">Contact us</a>
+        <nav aria-label="Main Navigation Menu">
+            <div class="topnav" id="myTopnav">
+                <a href="index.html" aria-label="View our menu">Home</a>
+                <a href="menu.html" aria-label="View our menu">Menu</a>
+                <a href="reservation.html" aria-label="Reserve a table at our izakaya" class="active">Book a table</a>
+                <a href="about.html" aria-label="Learn more about our history and values">About Oishi</a>
+                <a href="contact.html" aria-label="Contact us">Contact us</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                  <i class="fa fa-bars"></i>
+                </a>
+              </div>
         </nav>
     </header>
     <main>
@@ -34,55 +40,69 @@
             <h1>Discover Oishi Izakaya: A Culinary Journey</h1>
             <p>Dive deep into the rich culinary traditions of Oishi Izakaya. 
                 This book unveils the secrets behind our iconic dishes, offering readers 
-                a glimpse into the heart and soul of our kitchen. Embark on a gastronomic adventure 
+                a glimpse into the heart and soul of our kitchen.</p> 
+                <p>Embark on a gastronomic adventure 
                 and explore the essence of authentic Izakaya dining.</p>
 
             </div>
             <form id="reservationForm">
-                <label for="name">Full Name:</label>
-                <input type="text" id="name" name="name" required pattern="[A-Za-z\s]+" placeholder="Your name...">
+                <div class="form-row">
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" required pattern="[A-Za-z\s]+" placeholder="Your name...">
+                </div>
             
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required placeholder="Your email...">
+                <div class="form-row">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required placeholder="Your email...">
+                </div>
             
-                <label for="date">Reservation Date:</label>
-                <input type="date" id="date" name="date" required>
+                <div class="form-row">
+                    <label for="date">Reservation Date:</label>
+                    <input type="date" id="date" name="date" required>
+                </div>
             
-                <label for="time">Reservation Time:</label>
+                <div class="form-row">
+                    <label for="time">Reservation Time:</label>
                     <select id="time" name="time" required>
-                    <option value="18:00">6:00 PM</option>
-                    <option value="18:15">6:15 PM</option>
-                    <option value="18:30">6:30 PM</option>
-                    <option value="18:45">6:45 PM</option>
-                    <option value="19:00">7:00 PM</option>
-                    <option value="19:15">7:15 PM</option>
-                    <option value="19:30">7:30 PM</option>
-                    <option value="19:45">7:45 PM</option>
-                    <option value="20:00">8:00 PM</option>
-                    <option value="20:15">8:15 PM</option>
-                    <option value="20:30">8:30 PM</option>
-                    <option value="20:45">8:45 PM</option>
-                    <option value="21:00">9:00 PM</option>
-                    <option value="21:15">9:15 PM</option>
-                    <option value="21:30">9:30 PM</option>
-                    <option value="21:45">9:45 PM</option>
-                    <option value="22:00">10:00 PM</option>
-                    <option value="22:15">10:15 PM</option>
-                    <option value="22:30">10:30 PM</option>
-                    <option value="22:45">10:45 PM</option>
-                    <option value="23:00">11:00 PM</option>
-                    <option value="23:15">11:15 PM</option>
-                    <option value="23:30">11:30 PM</option>
-                    <option value="23:45">11:45 PM</option>
-                    </select>
-
+                        <option value="18:00">6:00 PM</option>
+                        <option value="18:15">6:15 PM</option>
+                        <option value="18:30">6:30 PM</option>
+                        <option value="18:45">6:45 PM</option>
+                        <option value="19:00">7:00 PM</option>
+                        <option value="19:15">7:15 PM</option>
+                        <option value="19:30">7:30 PM</option>
+                        <option value="19:45">7:45 PM</option>
+                        <option value="20:00">8:00 PM</option>
+                        <option value="20:15">8:15 PM</option>
+                        <option value="20:30">8:30 PM</option>
+                        <option value="20:45">8:45 PM</option>
+                        <option value="21:00">9:00 PM</option>
+                        <option value="21:15">9:15 PM</option>
+                        <option value="21:30">9:30 PM</option>
+                        <option value="21:45">9:45 PM</option>
+                        <option value="22:00">10:00 PM</option>
+                        <option value="22:15">10:15 PM</option>
+                        <option value="22:30">10:30 PM</option>
+                        <option value="22:45">10:45 PM</option>
+                        <option value="23:00">11:00 PM</option>
+                        <option value="23:15">11:15 PM</option>
+                        <option value="23:30">11:30 PM</option>
+                        <option value="23:45">11:45 PM</option>
+                        </select>
+                </div>
             
-                <label for="number">Number of Guests:</label>
-                <input type="number" id="number" name="number" required min="1" max="6" placeholder="Up to 6 attendees">
+                <div class="form-row">
+                    <label for="number">Number of Guests:</label>
+                    <input type="number" id="number" name="number" required min="1" max="6" placeholder="Up to 6 attendees">
+                </div>
             
-                <input type="submit" value="Submit">
+                <div class="form-row">
+                    <input type="submit" value="Submit">
+                </div>
             </form>
+            
     </main>
+
     <footer>
         <div class="upper-row">
             <div class="address">
@@ -120,7 +140,15 @@
             </div>
         </div>
     </footer>
-    
-    <script src="script/script.js"></script>  
+    <script>
+        function myFunction() {
+          var x = document.getElementById("myTopnav");
+          if (x.className === "topnav") {
+            x.className += " responsive";
+          } else {
+            x.className = "topnav";
+          }
+        }
+        </script>
 </body>
 </html>

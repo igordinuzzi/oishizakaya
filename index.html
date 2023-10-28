@@ -22,48 +22,72 @@
         <div>
             <a href="index.html" aria-label="Oishi Izakaya Home"><img src="img/oishi-logo.svg" alt="oishi logo"></a>
         </div>
-        <nav>
-            <a href="menu.html" aria-label="View our menu">Menu</a>
-            <a href="reservation.html" aria-label="Reserve a table at our izakaya">Book a table</a>
-            <a href="about.html" aria-label="Learn more about our history and values">About Oishi</a>
-            <a href="contact.html" aria-label="Contact us">Contact us</a>
+        <nav aria-label="Main Navigation Menu">
+            <div class="topnav" id="myTopnav">
+                <a href="index.html" aria-label="View our menu" class="active">Home</a>
+                <a href="menu.html" aria-label="View our menu">Menu</a>
+                <a href="reservation.html" aria-label="Reserve a table at our izakaya">Book a table</a>
+                <a href="about.html" aria-label="Learn more about our history and values">About Oishi</a>
+                <a href="contact.html" aria-label="Contact us">Contact us</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                  <i class="fa fa-bars"></i>
+                </a>
+              </div>
         </nav>
-        <div class="menu-icon">&#9776;</div>
     </header>
     <main>
-        <div class="hero-image">
-            <img src="img/hero-bg.jpg" alt="Izakaya ambiance">
-            <div class="hero-text">
-              <h1>Dive into Tokyo's Culinary Soul at Oishi Izakaya!</h1>
-              <a href="#main" class="btn">Visit our izakaya</a>
+        <div class="hero-section">
+            <div class="hero-content">
+                <h1>Dive into Tokyo's Culinary Soul!</h1>
+                <p>Experience the authentic taste of Tokyo at Oishi Izakaya.</p>
             </div>
-          </div>          
-          <div class="container" id="main">
-            <div class="column">
-              <picture>
-                <!-- For devices with a maximum width of 768px (generally, mobile devices) -->
-                <source media="(max-width: 768px)" srcset="img/home-menu-mobile.jpg">
-                <!-- For devices wider than 768px (like desktops) -->
-                <img src="img/home-menu.jpg" alt="Menu">
-              </picture>
-              <div class="content">
-                <h2>From Tokyo with Taste!</h2>
-                <a href="menu.html" aria-label="Explore our menu and uncover tasty treasures" class="btn">Uncover Tasty Treasures</a>
-              </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="column">
+                    <div class="text">
+                        <h2>From Tokyo with Taste!</h2>
+                        <p>Our izakaya menu offers a delightful fusion of Japanese small plates and snacks, 
+                            perfect for sharing and pairing with a variety of traditional and modern beverages. 
+                            Explore a tantalizing array of sushi, sashimi, grilled skewers, and innovative 
+                            izakaya-inspired dishes that showcase the rich flavors and artful presentation of Japanese cuisine.</p>
+                        <a href="menu.html" aria-label="Explore our menu and uncover tasty treasures" class="btn">Uncover Tasty Treasures</a>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="image">
+                        <picture>
+                            <!-- For devices with a maximum width of 768px (generally, mobile devices) -->
+                            <source media="(max-width: 768px)" srcset="img/home-menu-mobile.jpg">
+                            <!-- For devices wider than 768px (like desktops) -->
+                            <img src="img/home-menu.jpg" alt="Menu">
+                          </picture>
+                    </div>
+                </div>
             </div>
-            <div class="column">
-              <picture>
-                <!-- For devices with a maximum width of 768px (generally, mobile devices) -->
-                <source media="(max-width: 768px)" srcset="img/home-reservation-mobile.jpg">
-                <!-- For devices wider than 768px (like desktops) -->
-                <img src="img/home-reservation.jpg" alt="Reservation">
-              </picture>
-              <div class="content">
-                <h2>Dine the Izakaya Way. Book Your Table!</h2>
-                <a href="reservation.html" aria-label="Reserve a table at our Izakaya" class="btn">Grab Your Table</a>
-              </div>
+            <div class="row">
+                <div class="column">
+                    <div class="image">
+                        <picture>
+                            <!-- For devices with a maximum width of 768px (generally, mobile devices) -->
+                            <source media="(max-width: 768px)" srcset="img/home-reservation-mobile.jpg">
+                            <!-- For devices wider than 768px (like desktops) -->
+                            <img src="img/home-reservation.jpg" alt="Reservation">
+                          </picture>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="text">
+                        <h2>Dine the Izakaya Way. Book Your Table!</h2>
+                        <p>Reserve a table at our izakaya to experience an inviting ambiance that seamlessly blends 
+                            traditional Japanese decor with a contemporary twist. Our thoughtfully designed space 
+                            creates a cozy, yet vibrant setting, where guests can savor the flavors of Japan while 
+                            enjoying a relaxed and social atmosphere.</p>
+                        <a href="reservation.html" aria-label="Reserve a table at our Izakaya" class="btn">Grab Your Table</a>
+                    </div>
+                </div>
             </div>
-          </div>
+        </div>
           <div class="reviews-section">
             <h2>Client Reviews</h2>
             <div class="review-columns">
@@ -140,8 +164,15 @@
             </div>
         </div>
     </footer>
-    
-    
-    <script src="script/script.js"></script>   
+    <script>
+        function myFunction() {
+          var x = document.getElementById("myTopnav");
+          if (x.className === "topnav") {
+            x.className += " responsive";
+          } else {
+            x.className = "topnav";
+          }
+        }
+        </script>
 </body>
 </html>

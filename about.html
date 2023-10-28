@@ -22,20 +22,82 @@
         <div>
             <a href="index.html" aria-label="Oishi Izakaya Home"><img src="img/oishi-logo.svg" alt="oishi logo"></a>
         </div>
-        <nav>
-            <a href="menu.html" aria-label="View our menu">Menu</a>
-            <a href="reservation.html" aria-label="Reserve a table at our izakaya">Book a table</a>
-            <a href="about.html" aria-label="Learn more about our history and values">About Oishi</a>
-            <a href="contact.html" aria-label="Contact us">Contact us</a>
+        <nav aria-label="Main Navigation Menu">
+            <div class="topnav" id="myTopnav">
+                <a href="index.html" aria-label="View our menu">Home</a>
+                <a href="menu.html" aria-label="View our menu">Menu</a>
+                <a href="reservation.html" aria-label="Reserve a table at our izakaya">Book a table</a>
+                <a href="about.html" aria-label="Learn more about our history and values" class="active">About Oishi</a>
+                <a href="contact.html" aria-label="Contact us">Contact us</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                  <i class="fa fa-bars"></i>
+                </a>
+              </div>
         </nav>
     </header>
 <main>
         <div>
             <h1>Oishi Izakaya - Authentic Japanese Dining Experience in Taito, Tokyo</h1>
             <h2>Discover the heart and soul of Japanese cuisine at Oishi Izakaya, located in the vibrant neighborhood of Taito, Tokyo.</h2>
-            <p>Immerse yourself in the essence of an authentic Japanese izakaya, where delicious dishes, handcrafted cocktails, and a warm, welcoming 
-            atmosphere come together to create a memorable dining experience. Savor traditional flavors and culinary delights in 
+            <p>Immerse yourself in the essence of an authentic Japanese izakaya,<br> where delicious dishes, handcrafted cocktails, and a warm, welcoming 
+            atmosphere come together to create a memorable dining experience.</p>
+            <p>Savor traditional flavors and culinary delights in 
             the heart of Tokyo at Oishi Izakaya.</p>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="column">
+                    <div class="text">
+                        <p>Welcome to our Izakaya, where the vibrant flavors of Japanese cuisine come to life in 
+                            a cozy and inviting setting. At our Izakaya, we strive to capture the essence of 
+                            Japan's traditional pubs, offering a unique dining experience that combines exquisite 
+                            dishes with a warm and friendly atmosphere. Whether you're a seasoned fan of Japanese 
+                            cuisine or new to its delights, our menu is a culinary journey that will transport you to 
+                            the streets of Tokyo. From fresh sashimi to sizzling robata grill skewers, our dishes 
+                            are prepared with the finest ingredients and an unwavering commitment to authenticity. 
+                            Come and savor the artistry of Japanese flavors in the heart of our Izakaya, where good food, 
+                            great company, and memorable moments await.</p>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="image">
+                        <picture>
+                            <!-- For devices with a maximum width of 768px (generally, mobile devices) -->
+                            <source media="(max-width: 768px)" srcset="img/about-01-mobile.jpg">
+                            <!-- For devices wider than 768px (like desktops) -->
+                            <img src="img/about-01.jpg" alt="Menu">
+                          </picture>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="column">
+                    <div class="image">
+                        <picture>
+                            <!-- For devices with a maximum width of 768px (generally, mobile devices) -->
+                            <source media="(max-width: 768px)" srcset="img/about-02-mobile.jpg">
+                            <!-- For devices wider than 768px (like desktops) -->
+                            <img src="img/about-02.jpg" alt="Reservation">
+                          </picture>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="text">
+                        <p>
+                            In our Izakaya, we take pride in creating a haven for those seeking 
+                            a taste of Japan's rich gastronomic culture. Our dedication to quality 
+                            and flavor is reflected in every dish we serve, and our selection 
+                            of sake and craft cocktails complements the experience perfectly. 
+                            Whether you're looking for a casual dinner with friends or a romantic 
+                            evening for two, our Izakaya is a place where you can unwind, share stories, 
+                            and enjoy the delectable offerings from the Land of the Rising Sun. 
+                            Our friendly and attentive staff is here to ensure your visit is a memorable one, 
+                            and we invite you to explore our diverse menu of sushi, tempura, yakitori, and more. 
+                            Come and immerse yourself in the charm of our Izakaya, where Japanese culinary 
+                            traditions meet modern dining pleasure.</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </main>
     <footer>
@@ -75,7 +137,15 @@
             </div>
         </div>
     </footer>
-    
-    <script src="script/script.js"></script>  
+    <script>
+        function myFunction() {
+          var x = document.getElementById("myTopnav");
+          if (x.className === "topnav") {
+            x.className += " responsive";
+          } else {
+            x.className = "topnav";
+          }
+        }
+        </script>
 </body>
 </html>

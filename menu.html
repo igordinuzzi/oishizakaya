@@ -22,32 +22,37 @@
         <div>
             <a href="index.html" aria-label="Oishi Izakaya Home"><img src="img/oishi-logo.svg" alt="oishi logo"></a>
         </div>
-        <nav>
-            <a href="menu.html" aria-label="View our menu">Menu</a>
-            <a href="reservation.html" aria-label="Reserve a table at our izakaya">Book a table</a>
-            <a href="about.html" aria-label="Learn more about our history and values">About Oishi</a>
-            <a href="contact.html" aria-label="Contact us">Contact us</a>
+        <nav aria-label="Main Navigation Menu">
+            <div class="topnav" id="myTopnav">
+                <a href="index.html" aria-label="View our menu">Home</a>
+                <a href="menu.html" aria-label="View our menu" class="active">Menu</a>
+                <a href="reservation.html" aria-label="Reserve a table at our izakaya">Book a table</a>
+                <a href="about.html" aria-label="Learn more about our history and values">About Oishi</a>
+                <a href="contact.html" aria-label="Contact us">Contact us</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                  <i class="fa fa-bars"></i>
+                </a>
+              </div>
         </nav>
     </header>
     <div>
         <h1>Savoring the Essence: Menu Izakaya Oishi</h1>
         <p>Embark on a gastronomic journey through our offerings, where each bite encapsulates the spirit of 'Oishi'
-             – deliciousness in its purest form. Welcome to a symphony of tastes that are 
+             – deliciousness in its purest form.</p> 
+             <p>Welcome to a symphony of tastes that are 
              as authentic as they are imaginative. Welcome to Menu Izakaya Oishi.
             </p>
     </div>
     <div>
         <div class="menu">
-            <div class="menu-header">Izakaya Menu</div>
-    
             <!-- Tabs -->
             <div class="tabs">
-                <div class="tab active" onclick="showTab('appetizers')">Appetizers</div>
-                <div class="tab" onclick="showTab('mainCourses')">Main Courses</div>
-                <div class="tab" onclick="showTab('desserts')">Desserts</div>
-                <div class="tab" onclick="showTab('drinks')">Drinks</div>
+              <div class="tab active" onclick="showTab('appetizers')">Appetizers</div>
+              <div class="tab" onclick="showTab('mainCourses')">Main Courses</div>
+              <div class="tab" onclick="showTab('desserts')">Desserts</div>
+              <div class="tab" onclick="showTab('drinks')">Drinks</div>
             </div>
-    
+
             <!-- Appetizers Section -->
             <div class="tab-content active" id="appetizers">
                 <div class="item">
@@ -74,7 +79,7 @@
                             <img src="img/menu/gyoza.jpg" alt="gyoza">
                         </picture>
                         <div class="item-name">Gyoza</div>
-                        <div class="item-description">Pan-fried Japanese dumplings filled with pork and vegetables</div>
+                        <div class="item-description">Pan-fried Japanese dumplings</div>
                     </div>
                     <div class="item-price">¥700</div>
                 </div>
@@ -89,7 +94,7 @@
                             <img src="img/menu/takoyaki.jpg" alt="takoyaki">
                         </picture>
                         <div class="item-name">Takoyaki</div>
-                        <div class="item-description">Ball-shaped snack filled with minced or diced octopus, tempura scraps, and green onion</div>
+                        <div class="item-description">Ball-shaped snack</div>
                     </div>
                     <div class="item-price">¥600</div>
                 </div>
@@ -104,24 +109,9 @@
                             <img src="img/menu/karage.jpg" alt="karage">
                         </picture>
                         <div class="item-name">Karaage</div>
-                        <div class="item-description">Japanese-style fried chicken, typically marinated in soy sauce, garlic, and ginger</div>
+                        <div class="item-description">Japanese-style fried chicken</div>
                     </div>
                     <div class="item-price">¥800</div>
-                </div>
-                
-                <div class="item">
-                    <div>
-                        <picture>
-                            <!-- For devices with a maximum width of 768px (generally, mobile devices) -->
-                            <source media="(max-width: 768px)" srcset="img/menu/yakitori-mobile.jpg">
-                            
-                            <!-- For devices wider than 768px (like desktops) -->
-                            <img src="img/menu/yakitori.jpg" alt="yakitori">
-                        </picture>
-                        <div class="item-name">Yakitori</div>
-                        <div class="item-description">Skewered and grilled chicken, can be served with various parts like thigh, liver, or skin</div>
-                    </div>
-                    <div class="item-price">¥900</div>
                 </div>
             </div>
             
@@ -155,7 +145,7 @@
                             <img src="img/menu/tonkatsu.jpg" alt="tonkatsu">
                         </picture>
                         <div class="item-name">Tonkatsu</div>
-                        <div class="item-description">Crispy breaded pork cutlet served with shredded cabbage</div>
+                        <div class="item-description">Crispy breaded pork cutlet</div>
                     </div>
                     <div class="item-price">¥1700</div>
                 </div>
@@ -171,7 +161,7 @@
                             <img src="img/menu/tempura.jpg" alt="tempura">
                         </picture>
                         <div class="item-name">Tempura Udon</div>
-                        <div class="item-description">Udon noodles in a rich broth served with mixed tempura</div>
+                        <div class="item-description">Udon noodles</div>
                     </div>
                     <div class="item-price">¥1300</div>
                 </div>
@@ -187,25 +177,9 @@
                             <img src="img/menu/unagi.jpg" alt="unagi">
                         </picture>
                         <div class="item-name">Unagi Don</div>
-                        <div class="item-description">Grilled eel over rice with a special savory sauce</div>
+                        <div class="item-description">Grilled eel</div>
                     </div>
                     <div class="item-price">¥2500</div>
-                </div>
-                
-                <!-- Sashimi Platter -->
-                <div class="item">
-                    <div>
-                        <picture>
-                            <!-- For devices with a maximum width of 768px (generally, mobile devices) -->
-                            <source media="(max-width: 768px)" srcset="img/menu/sashimi-mobile.jpg">
-                            
-                            <!-- For devices wider than 768px (like desktops) -->
-                            <img src="img/menu/sashimi.jpg" alt="sashimi">
-                        </picture>
-                        <div class="item-name">Sashimi Platter</div>
-                        <div class="item-description">Assorted fresh fish slices served with wasabi and soy sauce</div>
-                    </div>
-                    <div class="item-price">¥2800</div>
                 </div>
             </div>
             
@@ -223,7 +197,7 @@
                             <img src="img/menu/doroyaki.jpg" alt="doroyaki">
                         </picture>
                         <div class="item-name">Dorayaki Pancakes</div>
-                        <div class="item-description">Fluffy pancakes filled with sweet azuki bean paste</div>
+                        <div class="item-description">Fluffy pancakes</div>
                     </div>
                     <div class="item-price">¥500</div>
                 </div>
@@ -239,7 +213,7 @@
                             <img src="img/menu/tiramisu.jpg" alt="tiramisu">
                         </picture>
                         <div class="item-name">Matcha Tiramisu</div>
-                        <div class="item-description">Layered dessert with matcha-soaked sponge and creamy mascarpone</div>
+                        <div class="item-description">Layered dessert</div>
                     </div>
                     <div class="item-price">¥650</div>
                 </div>
@@ -255,7 +229,7 @@
                             <img src="img/menu/fish-dessert.jpg" alt="fish dessert">
                         </picture>
                         <div class="item-name">Taiyaki</div>
-                        <div class="item-description">Fish-shaped cake filled with azuki or custard</div>
+                        <div class="item-description">Fish-shaped cake</div>
                     </div>
                     <div class="item-price">¥400</div>
                 </div>
@@ -271,25 +245,9 @@
                             <img src="img/menu/mochi.jpg" alt="Mochi">
                         </picture>
                         <div class="item-name">Kuzu Mochi</div>
-                        <div class="item-description">Chewy transparent mochi served with kuromitsu syrup and kinako powder</div>
+                        <div class="item-description">Chewy transparent mochi</div>
                     </div>
                     <div class="item-price">¥550</div>
-                </div>
-            
-                <!-- Dessert 5 -->
-                <div class="item">
-                    <div>
-                        <picture>
-                            <!-- For devices with a maximum width of 768px (generally, mobile devices) -->
-                            <source media="(max-width: 768px)" srcset="img/menu/fruit-salad-mobile.jpg">
-                            
-                            <!-- For devices wider than 768px (like desktops) -->
-                            <img src="img/menu/fruit-salad.jpg" alt="fruit salad">
-                        </picture>
-                        <div class="item-name">Anmitsu</div>
-                        <div class="item-description">Traditional dessert with agar jelly, fruits, mochi, and azuki paste</div>
-                    </div>
-                    <div class="item-price">¥600</div>
                 </div>
             </div>
             
@@ -355,26 +313,11 @@
                             <img src="img/menu/highball.jpg" alt="Highball">
                         </picture>
                         <div class="item-name">Matcha Highball</div>
-                        <div class="item-description">Refreshing cocktail with matcha and whiskey</div>
+                        <div class="item-description">Refreshing cocktail</div>
                     </div>
                     <div class="item-price">¥750</div>
                 </div>
-            
-                <!-- Drink 5 -->
-                <div class="item">
-                    <div>
-                        <picture>
-                            <!-- For devices with a maximum width of 768px (generally, mobile devices) -->
-                            <source media="(max-width: 768px)" srcset="img/menu/tea-mobile.jpg">
-                            
-                            <!-- For devices wider than 768px (like desktops) -->
-                            <img src="img/menu/tea.jpg" alt="Tea">
-                        </picture>
-                        <div class="item-name">Oolong Hai</div>
-                        <div class="item-description">Shochu mixed with oolong tea</div>
-                    </div>
-                    <div class="item-price">¥550</div>
-                </div>
+
             </div>
             
         </div>
@@ -416,6 +359,15 @@
             </div>
         </div>
     </footer>
-    <script src="script/script.js"></script>  
+    <script>
+        function myFunction() {
+          var x = document.getElementById("myTopnav");
+          if (x.className === "topnav") {
+            x.className += " responsive";
+          } else {
+            x.className = "topnav";
+          }
+        }
+        </script>
 </body>
 </html>

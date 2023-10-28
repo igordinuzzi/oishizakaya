@@ -1,3 +1,5 @@
+
+
 @import url('https://fonts.googleapis.com/css2?family=Bitter&family=Karla:wght@300;400;700&display=swap');
 
 * {
@@ -9,141 +11,120 @@
 body {
   line-height: 1.5;
   color: #282c45; 
-  background-color: #E0E0E0; 
+  background-color: #E0E0E0
+; 
   font-family: 'Karla', sans-serif;
   font-size: 16px;
   text-align: center;
 }
 
-/* Style for the container */
 .container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  margin: 0;
-  padding: 0;
-  height: auto; 
-}
-
-/* Style for each column */
-.column {
-  flex: 0 0 calc(50% - 0.5px); 
-  max-width: calc(50% - 0.5px); 
-  padding: 0;
-  text-align: center;
-  margin: 0;
-  position: relative;
-  overflow: hidden;
-  box-sizing: border-box;
-  height: auto; 
-
-  /* Adjust the position property for child elements */
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-/* Style for images within columns */
-.column img {
-  width: 100%;
-  max-height: 100%;
-  object-fit: cover;
-  height: auto; 
-}
-
-/* Style for the semi-transparent overlay */
-.column::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.6);
-  opacity: 0;
-  z-index: 1;
-  transition: opacity 0.3s;
-}
-
-/* Style for text */
-.column .content {
-  position: absolute;
-  bottom: 0; 
-  left: 50%;
-  transform: translateX(-50%); 
-  z-index: 2;
-  color: #fff;
-  text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
   padding: 20px;
-  background: rgba(0, 0, 0, 0.6); 
-  width: 100%;
+  text-align: left; 
 }
 
-.column h1,
-.column a {
-  z-index: 3; /* Adjust z-index for text and button */
-  margin: 0;
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.column {
+  flex: 1;
   padding: 10px;
 }
 
-/* Center text and button vertically and horizontally */
-.column h1 {
-  display: inline-block;
-  text-align: center;
+.text {
+  padding: 20px;
+  margin: 0 auto; 
 }
 
-/* Media query for smaller screens (e.g., mobile) */
+.text p {
+  font-size: 16px;
+}
+
+.image {
+  max-width: 100%;
+}
+
+/* Media query for responsiveness */
 @media screen and (max-width: 768px) {
   .container {
-    flex-direction: column;
+    text-align: center; 
+  }
+
+  .row {
+    flex-direction: column; 
   }
 
   .column {
-    flex: 0 0 100%; /* Make the columns full width on mobile */
-    margin-bottom: 1px; 
+    flex: 100%;
+    padding: 10px;
+  }
 
-    /* Adjust font size and padding for text and button on mobile */
-    .column h1 {
-      font-size: 24px;
-      padding: 10px;
-    }
+  .text {
+    margin: 0; 
+  }
 
-    .column a {
-      font-size: 16px;
-      padding: 10px 20px;
-    }
+  .column .text p {
+    font-size: 14px; 
+  }
+
+  .column .image img {
+    max-width: 100%; 
   }
 }
 
 
 
 
-
-
-
-
-/* Fonts */
+/* Default font styles */
 h1, h2, h3, h4, h5, h6 {
-    font-weight: bold;
-    margin-bottom: 15px;
-  }
-  
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+h1 {
+  font-size: 32px;
+  font-family: 'Bitter', serif;
+  text-align: center;
+  color: #76141C;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+p {
+  margin-bottom: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+/* Media query for responsiveness */
+@media screen and (max-width: 768px) {
   h1 {
-    font-size: 32px;
-    font-family: 'Bitter', serif;
-    text-align: center;
+      font-size: 28px;
+      padding-top: 10px;
+      padding-bottom: 10px;
   }
-  
+
   h2 {
-    font-size: 24px;
+      font-size: 20px;
   }
-  
+
   p {
-    margin-bottom: 15px;
+      font-size: 14px; 
   }
+}
+
+
   
-  /* Navigation */
+  /* Header */
   header {
     display: flex;
     justify-content: space-between;
@@ -160,43 +141,60 @@ header div img {
     height: auto;
 }
 
-nav {
-    display: flex;
-    gap: 20px;
+/* Navigation */
+.topnav {
+  overflow: hidden;
 }
 
-nav a {
-    color: #fff;
-    text-decoration: none;
-    padding: 5px 10px;
-    border-radius: 5px;
-    transition: background-color 0.3s;
+.topnav a {
+  float: left;
+  display: block;
+  color: #fff;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
 }
 
-nav a:hover {
-    background-color: #141E76;
-    color: #fff;
+.topnav a:hover {
+  background-color: #fff;
+  color: #76141C;
 }
 
-.menu-icon {
-    display: none;
-    font-size: 24px;
-    cursor: pointer;
+.topnav a.active {
+  background-color: #fff;
+  color: #76141C;
 }
 
-/* Responsive design */
-@media screen and (max-width: 768px) {
-    nav {
-        display: none;
-    }
-
-    .menu-icon {
-        display: block;
-        color: #fff;
-    }
+.topnav .icon {
+  display: none;
 }
 
-  /* Footer */
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+
+
+/* Footer */
 
   footer {
     background-color: #141E76;
@@ -204,8 +202,8 @@ nav a:hover {
     padding: 20px;
     font-family: 'Karla', sans-serif;
     text-align: center;
-    margin-top: 0; /* Set the margin-top to 0 to remove spacing from the top */
-    margin-bottom: 0; /* Set the margin-bottom to 0 to remove spacing from the bottom */
+    margin-top: 0; 
+    margin-bottom: 0; 
   }
 
 footer a {
@@ -282,50 +280,39 @@ footer a:hover {
   
   a:hover {
     text-decoration: none;
-    color: #141E76;
+    color: #350004;
   }
 
-
-/* Style for the hero image container */
-.hero-image {
-  position: relative;
+/* Hero Section */
+.hero-section {
+  background: #764214;
   width: 100%;
-  max-width: 100%;
+  display: flex;
+  justify-content: center; 
+  align-items: center;     
+  padding: 100px 0;        
 }
 
-/* Style for the hero image */
-.hero-image img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
-/* Style for the semi-transparent overlay */
-.hero-image::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.6); 
-}
-
-/* Style for the hero text and button */
-.hero-text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+.hero-content {
   text-align: center;
-  color: #fff;
-  width: 80%; 
+  color: white; 
 }
 
-.hero-text h1 {
+.hero-content h1 {
   font-size: 2em; 
-  margin-bottom: 1.5em; 
+  margin-bottom: 20px;
+  color: #fff;
 }
+
+
+/* Optional: Responsive adjustments */
+@media screen and (max-width: 768px) {
+  .hero-content h1 {
+      font-size: 1.5em;
+  }
+}
+
+
 
 /* Style for the button */
 .btn {
@@ -343,7 +330,7 @@ footer a:hover {
 }
 
 .btn:hover {
-  background-color: #141E76;
+  background-color: #764214;
   color: #fff;
 }
 
@@ -368,8 +355,8 @@ footer a:hover {
 
 /* Style for the reviews section */
 .reviews-section {
-  background-color: #F8CACD;
-  color: #141E76;
+  background-color: #764214;
+  color: #fff;
   padding: 40px;
   margin-bottom: 0;
   text-align: center;
@@ -381,28 +368,52 @@ footer a:hover {
   margin-bottom: 20px;
 }
 
-/* Style for review columns */
+/* Style for review columns container */
 .review-columns {
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
+  justify-content: center; 
 }
 
 /* Style for individual columns */
 .review-column {
-  width: calc(50% - 20px); /* 50% width with margin */
+  width: calc(33.33% - 20px); 
   margin: 0 10px;
   box-sizing: border-box;
 }
 
+/* Responsive design for smaller screens (e.g., mobile) */
+@media screen and (max-width: 768px) {
+  /* Adjust styles for smaller screens */
+  .reviews-section h2 {
+      font-size: 24px;
+  }
+  .review-columns {
+      flex-direction: column;
+  }
+  .review-column {
+      width: 100%;
+  }
+  .review {
+      padding: 15px;
+  }
+  .review-author {
+      font-size: 14px;
+  }
+  .review-content {
+      font-size: 16px;
+  }
+}
+
+
 /* Style for individual reviews */
 .review {
-  color: #141E76;
+  color: #fff;
   padding: 20px;
   margin-bottom: 20px;
   text-align: center;
-  border: 2px solid #141E76; /* Add a 1px solid border with the same color as the text */
-  background: none; /* Remove the background */
+  border: 2px solid #fff; 
+  background: none; 
 }
 
 
@@ -442,94 +453,167 @@ footer a:hover {
 }
 
 
-  /* Menu */
+/* Menu */
+.menu {
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  text-align: center;
+}
 
-  .item {
-    text-align: center;
-  }
+.tabs {
+  display: flex;
+  margin: 10px;
+  justify-content: center;
+}
 
-  .item-name {
-    font-weight: bold;
-    font-size: 20px;
-  }
-
-  .item-description {
-    color: #666;
-  }
-
-  .tab {
-  }
-
-
-/* Style for the tab */
 .tab {
-  display: inline-block;    
-  padding: 10px 20px;      
-  cursor: pointer;          
-  background-color: #f0f0f0; 
-  border: 1px solid #ccc;  
-  transition: background-color 0.3s; 
-  margin-right: 10px;      
-  border-radius: 5px;     
-  text-align: center;     
+  display: inline-block;
+  padding: 10px 20px;
+  cursor: pointer;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  transition: background-color 0.3s;
+  margin-right: 10px;
+  border-radius: 5px;
 }
 
 .tab:hover {
-  background-color: #e0e0e0; 
+  background-color: #e0e0e0;
 }
 
 .tab.active {
-  background-color: #141E76; 
-  color: white;           
+  background-color: #141E76;
+  color: white;
+}
+
+.tab-content-gap {
+  height: 20px; 
+}
+
+.tab-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/* Menu responsive grid */
+.item {
+  text-align: center;
+  width: calc(25% - 20px); 
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+  .tab-content {
+      width: 100%; 
+      padding: 0 10px; 
+  }
+
+  .tab {
+      margin: 5px 0;
+  }
+
+  /* Menu 2 columns on mobile */
+  .item {
+      width: calc(50% - 20px); 
+  }
 }
 
 
 /* General styling for labels */
+
+#reservationForm {
+  padding-bottom: 50px;
+}
+
 label {
-  display: block;       
-  margin: 15px 0 5px;  
-  font-weight: bold;  
+  display: block;
+  width: 100%; 
+  margin: 10px 0 5px;
+  font-weight: bold;
+  text-align: center; 
   color: #333;
 }
 
-/* General styling for input fields */
-input {
-  width: 20%;         
-  padding: 10px;      
-  border: 1px solid #ccc; 
-  border-radius: 4px;  
-  font-size: 14px;    
-  color: #555;        
-  box-sizing: border-box; 
-  transition: border-color 0.3s; 
+/* General styling for input fields and select */
+input, select {
+  width: 50%; 
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  color: #555;
+  box-sizing: border-box;
+  transition: border-color 0.3s;
 }
 
-/* Effect for focusing on input fields */
-input:focus {
-  border-color: #141E76; 
-  outline: none;    
+/* Effect for focusing on input fields and select */
+input:focus, select:focus {
+  border-color: #141E76;
+  outline: none;
 }
 
-/* Styling specifically for the placeholder text in inputs */
-input::placeholder {
+/* Styling specifically for the placeholder text in inputs and select */
+input::placeholder, select::placeholder {
   color: #999;
-}      
+}
 
 /* Styling for the submit input */
 input[type="submit"] {
-  background-color: #76141C;  
-  color: white;               
-  padding: 10px 20px;        
-  border: none;              
-  border-radius: 5px;         
-  cursor: pointer;            
-  font-size: 16px;            
-  transition: background-color 0.3s; 
+  background-color: #76141C;
+  color: white;
+  padding: 10px 20px;
+  margin-top: 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
 }
 
 /* Hover effect for the submit input */
 input[type="submit"]:hover {
-  background-color: #141E76;  
+  background-color: #764214;
 }
 
+/* Create a one-column layout on mobile */
+@media screen and (max-width: 768px) {
+  /* Make input fields wider on mobile */
+  input, select {
+    width: 80%;
+  }
+
+  label {
+    text-align: center; 
+  }
+}
+
+
+.location-container {
+  padding: 50px 20px; /* 50px top and bottom, 20px left and right */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.location-details {
+  flex: 1;
+  text-align: center;
+}
+
+.map-container {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+iframe {
+  max-width: 100%;
+  height: 450px; /* Set the desired height */
+}
 

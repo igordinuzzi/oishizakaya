@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Oishi Izakaya, About Us</title>
+    <title>Oishi Izakaya, About us</title>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <script src="js/responsive-nav.js"></script>
     <meta name="description" content="Experience Oishi Izakaya - a haven of authentic Japanese flavors and ambiance. Indulge in the delicacies of traditional Japanese cuisine and drinks.">
     <meta name="keywords" content="Oishi, Izakaya, Japanese, Tavern, Sake, Cuisine, Authentic, Tokyo Flavors">
     <meta name="author" content="Igor Dinuzzi">
@@ -19,24 +20,25 @@
 </head>
 <body>
     <header>
-        <div>
-            <a href="index.html" aria-label="Oishi Izakaya Home"><img src="img/oishi-logo.svg" alt="oishi logo"></a>
-        </div>
-        <nav aria-label="Main Navigation Menu">
-            <div class="topnav" id="myTopnav">
-                <a href="index.html" aria-label="View our menu">Home</a>
-                <a href="menu.html" aria-label="View our menu">Menu</a>
-                <a href="reservation.html" aria-label="Reserve a table at our izakaya">Book a table</a>
-                <a href="about.html" aria-label="Learn more about our history and values" class="active">About Oishi</a>
-                <a href="contact.html" aria-label="Contact us">Contact us</a>
-                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                  <i class="fa fa-bars"></i>
-                </a>
-              </div>
+        <a href="index.html" aria-label="Oishi Izakaya Home" class="logo" data-scroll><img src="img/oishi-logo.svg" alt="oishi logo"></a>
+
+        <nav class="nav-collapse">
+          <ul>
+            <li class="menu-item"><a href="index.html" aria-label="View our menu">Home</a></li>
+            <li class="menu-item"><a href="menu.html" aria-label="View our menu">Menu</a></li>
+            <li class="menu-item"><a href="reservation.html" aria-label="Reserve a table at our izakaya">Book a table</a></li>
+            <li class="menu-item active"><a href="about.html" aria-label="Learn more about our history and values">About Oishi</a></li>
+            <li class="menu-item"><a href="contact.html" aria-label="Contact us">Contact us</a></li>
+          </ul>
         </nav>
-    </header>
+      </header>
 <main>
-        <div>
+    <div class="breadcrumb">
+        <a href="index.html">Home</a>
+        <span class="separator"> > </span>
+        <span class="current-page">About us</span>
+      </div>
+      <div>
             <h1>Oishi Izakaya - Authentic Japanese Dining Experience in Taito, Tokyo</h1>
             <h2>Discover the heart and soul of Japanese cuisine at Oishi Izakaya, located in the vibrant neighborhood of Taito, Tokyo.</h2>
             <p>Immerse yourself in the essence of an authentic Japanese izakaya,<br> where delicious dishes, handcrafted cocktails, and a warm, welcoming 
@@ -137,15 +139,8 @@
             </div>
         </div>
     </footer>
-    <script>
-        function myFunction() {
-          var x = document.getElementById("myTopnav");
-          if (x.className === "topnav") {
-            x.className += " responsive";
-          } else {
-            x.className = "topnav";
-          }
-        }
-        </script>
+    <script src="js/fastclick.js"></script>
+    <script src="js/scroll.js"></script>
+    <script src="js/fixed-responsive-nav.js"></script>
 </body>
 </html>

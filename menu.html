@@ -7,343 +7,253 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bitter&family=Karla&display=swap" rel="stylesheet">
     <script src="js/responsive-nav.js"></script>
     <meta name="description" content="Experience Oishi Izakaya - a haven of authentic Japanese flavors and ambiance. Indulge in the delicacies of traditional Japanese cuisine and drinks.">
     <meta name="keywords" content="Oishi, Izakaya, Japanese, Tavern, Sake, Cuisine, Authentic, Tokyo Flavors">
     <meta name="author" content="Igor Dinuzzi">
     <meta name="robots" content="index, follow">
-    <meta name="og:title" content="Oishi Izakaya - Authentic Japanese Flavors and Ambiance">
-    <meta name="og:description" content="Experience Oishi Izakaya - a haven of authentic Japanese flavors and ambiance. Indulge in the delicacies of traditional Japanese cuisine and drinks.">
-    <meta name="og:url" content="https://igordinuzzi.github.io/oishiizakaya/">
-    <meta name="og:type" content="website">
-    <meta name="og:site_name" content="Oishi Izakaya">    
+    <meta property="og:title" content="Oishi Izakaya - Authentic Japanese Flavors and Ambiance">
+    <meta property="og:description" content="Experience Oishi Izakaya - a haven of authentic Japanese flavors and ambiance. Indulge in the delicacies of traditional Japanese cuisine and drinks.">
+    <meta property="og:url" content="https://igordinuzzi.github.io/oishiizakaya/">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Oishi Izakaya">
 </head>
 <body>
     <header>
         <a href="index.html" aria-label="Oishi Izakaya Home" class="logo" data-scroll><img src="img/oishi-logo.svg" alt="oishi logo"></a>
 
         <nav class="nav-collapse">
-          <ul>
-            <li class="menu-item"><a href="index.html" aria-label="View our menu">Home</a></li>
-            <li class="menu-item active"><a href="menu.html" aria-label="View our menu">Menu</a></li>
-            <li class="menu-item"><a href="reservation.html" aria-label="Reserve a table at our izakaya">Book a table</a></li>
-            <li class="menu-item"><a href="about.html" aria-label="Learn more about our history and values">About Oishi</a></li>
-            <li class="menu-item"><a href="contact.html" aria-label="Contact us">Contact us</a></li>
-          </ul>
+            <ul>
+                <li class="menu-item"><a href="index.html" aria-label="View our menu">Home</a></li>
+                <li class="menu-item active"><a href="menu.html" aria-label="View our menu">Menu</a></li>
+                <li class="menu-item"><a href="reservation.html" aria-label="Reserve a table at our izakaya">Book a table</a></li>
+                <li class="menu-item"><a href="about.html" aria-label="Learn more about our history and values">About Oishi</a></li>
+                <li class="menu-item"><a href="contact.html" aria-label="Contact us">Contact us</a></li>
+            </ul>
         </nav>
-      </header>
+    </header>
     <main>
         <div class="breadcrumb">
             <a href="index.html">Home</a>
             <span class="separator"> > </span>
             <span class="current-page">Menu</span>
-          </div>
-    <div>
-        <h1>Savoring the Essence: Menu Izakaya Oishi</h1>
-             <p>Welcome to a symphony of tastes that are 
-             as authentic as they are imaginative. Welcome to Menu Izakaya Oishi.
-            </p>
-    </div>
-    <div>
-        <div class="menu">
-            <!-- Tabs -->
-            <div class="tabs">
-              <div class="tab active" onclick="showTab('appetizers')">Appetizers</div>
-              <div class="tab" onclick="showTab('mainCourses')">Main Courses</div>
-              <div class="tab" onclick="showTab('desserts')">Desserts</div>
-              <div class="tab" onclick="showTab('drinks')">Drinks</div>
-            </div>
-
-            <!-- Appetizers Section -->
-            <div class="tab-content active" id="appetizers">
-                <div class="item">
-                    <div>
-                        <picture>
-                            <!-- For devices with a maximum width of 768px (generally, mobile devices) -->
-                            <source media="(max-width: 768px)" srcset="img/menu/edamame-mobile.jpg">
-                            
-                            <!-- For devices wider than 768px (like desktops) -->
-                            <img src="img/menu/edamame.jpg" alt="Edamame">
-                        </picture>
-                        <div class="item-name">Edamame</div>
-                        <div class="item-description">Boiled green soybeans with salt</div>
-                    </div>
-                    <div class="item-price">¥500</div>
-                </div>
-                <div class="item">
-                    <div>
-                        <picture>
-                            <!-- For devices with a maximum width of 768px (generally, mobile devices) -->
-                            <source media="(max-width: 768px)" srcset="img/menu/gyoza-mobile.jpg">
-                            
-                            <!-- For devices wider than 768px (like desktops) -->
-                            <img src="img/menu/gyoza.jpg" alt="gyoza">
-                        </picture>
-                        <div class="item-name">Gyoza</div>
-                        <div class="item-description">Pan-fried Japanese dumplings</div>
-                    </div>
-                    <div class="item-price">¥700</div>
-                </div>
-                
-                <div class="item">
-                    <div>
-                        <picture>
-                            <!-- For devices with a maximum width of 768px (generally, mobile devices) -->
-                            <source media="(max-width: 768px)" srcset="img/menu/takoyaki-mobile.jpg">
-                            
-                            <!-- For devices wider than 768px (like desktops) -->
-                            <img src="img/menu/takoyaki.jpg" alt="takoyaki">
-                        </picture>
-                        <div class="item-name">Takoyaki</div>
-                        <div class="item-description">Ball-shaped snack</div>
-                    </div>
-                    <div class="item-price">¥600</div>
-                </div>
-                
-                <div class="item">
-                    <div>
-                        <picture>
-                            <!-- For devices with a maximum width of 768px (generally, mobile devices) -->
-                            <source media="(max-width: 768px)" srcset="img/menu/karage-mobile.jpg">
-                            
-                            <!-- For devices wider than 768px (like desktops) -->
-                            <img src="img/menu/karage.jpg" alt="karage">
-                        </picture>
-                        <div class="item-name">Karaage</div>
-                        <div class="item-description">Japanese-style fried chicken</div>
-                    </div>
-                    <div class="item-price">¥800</div>
-                </div>
-            </div>
-            
-    
-            <!-- Main Courses Section -->
-            <div class="tab-content" id="mainCourses">
-                <!-- Grilled Mackerel -->
-                <div class="item">
-                    <div>
-                        <picture>
-                            <!-- For devices with a maximum width of 768px (generally, mobile devices) -->
-                            <source media="(max-width: 768px)" srcset="img/menu/grilled-mobile.jpg">
-                            
-                            <!-- For devices wider than 768px (like desktops) -->
-                            <img src="img/menu/grilled.jpg" alt="grilled mackerel">
-                        </picture>
-                        <div class="item-name">Grilled Mackerel</div>
-                        <div class="item-description">Grilled mackerel seasoned with salt</div>
-                    </div>
-                    <div class="item-price">¥1500</div>
-                </div>
-                
-                <!-- Tonkatsu -->
-                <div class="item">
-                    <div>
-                        <picture>
-                            <!-- For devices with a maximum width of 768px (generally, mobile devices) -->
-                            <source media="(max-width: 768px)" srcset="img/menu/tonkatsu-mobile.jpg">
-                            
-                            <!-- For devices wider than 768px (like desktops) -->
-                            <img src="img/menu/tonkatsu.jpg" alt="tonkatsu">
-                        </picture>
-                        <div class="item-name">Tonkatsu</div>
-                        <div class="item-description">Crispy breaded pork cutlet</div>
-                    </div>
-                    <div class="item-price">¥1700</div>
-                </div>
-                
-                <!-- Tempura Udon -->
-                <div class="item">
-                    <div>
-                        <picture>
-                            <!-- For devices with a maximum width of 768px (generally, mobile devices) -->
-                            <source media="(max-width: 768px)" srcset="img/menu/tempura-mobile.jpg">
-                            
-                            <!-- For devices wider than 768px (like desktops) -->
-                            <img src="img/menu/tempura.jpg" alt="tempura">
-                        </picture>
-                        <div class="item-name">Tempura Udon</div>
-                        <div class="item-description">Udon noodles</div>
-                    </div>
-                    <div class="item-price">¥1300</div>
-                </div>
-                
-                <!-- Unagi Don -->
-                <div class="item">
-                    <div>
-                        <picture>
-                            <!-- For devices with a maximum width of 768px (generally, mobile devices) -->
-                            <source media="(max-width: 768px)" srcset="img/menu/unagi-mobile.jpg">
-                            
-                            <!-- For devices wider than 768px (like desktops) -->
-                            <img src="img/menu/unagi.jpg" alt="unagi">
-                        </picture>
-                        <div class="item-name">Unagi Don</div>
-                        <div class="item-description">Grilled eel</div>
-                    </div>
-                    <div class="item-price">¥2500</div>
-                </div>
-            </div>
-            
-    
-            <!-- Desserts Section -->
-            <div class="tab-content" id="desserts">
-                <!-- Dessert 1 -->
-                <div class="item">
-                    <div>
-                        <picture>
-                            <!-- For devices with a maximum width of 768px (generally, mobile devices) -->
-                            <source media="(max-width: 768px)" srcset="img/menu/doroyaki-mobile.jpg">
-                            
-                            <!-- For devices wider than 768px (like desktops) -->
-                            <img src="img/menu/doroyaki.jpg" alt="doroyaki">
-                        </picture>
-                        <div class="item-name">Dorayaki Pancakes</div>
-                        <div class="item-description">Fluffy pancakes</div>
-                    </div>
-                    <div class="item-price">¥500</div>
-                </div>
-            
-                <!-- Dessert 2 -->
-                <div class="item">
-                    <div>
-                        <picture>
-                            <!-- For devices with a maximum width of 768px (generally, mobile devices) -->
-                            <source media="(max-width: 768px)" srcset="img/menu/tiramisu-mobile.jpg">
-                            
-                            <!-- For devices wider than 768px (like desktops) -->
-                            <img src="img/menu/tiramisu.jpg" alt="tiramisu">
-                        </picture>
-                        <div class="item-name">Matcha Tiramisu</div>
-                        <div class="item-description">Layered dessert</div>
-                    </div>
-                    <div class="item-price">¥650</div>
-                </div>
-            
-                <!-- Dessert 3 -->
-                <div class="item">
-                    <div>
-                        <picture>
-                            <!-- For devices with a maximum width of 768px (generally, mobile devices) -->
-                            <source media="(max-width: 768px)" srcset="img/menu/fish-dessert-mobile.jpg">
-                            
-                            <!-- For devices wider than 768px (like desktops) -->
-                            <img src="img/menu/fish-dessert.jpg" alt="fish dessert">
-                        </picture>
-                        <div class="item-name">Taiyaki</div>
-                        <div class="item-description">Fish-shaped cake</div>
-                    </div>
-                    <div class="item-price">¥400</div>
-                </div>
-            
-                <!-- Dessert 4 -->
-                <div class="item">
-                    <div>
-                        <picture>
-                            <!-- For devices with a maximum width of 768px (generally, mobile devices) -->
-                            <source media="(max-width: 768px)" srcset="img/menu/mochi-mobile.jpg">
-                            
-                            <!-- For devices wider than 768px (like desktops) -->
-                            <img src="img/menu/mochi.jpg" alt="Mochi">
-                        </picture>
-                        <div class="item-name">Kuzu Mochi</div>
-                        <div class="item-description">Chewy transparent mochi</div>
-                    </div>
-                    <div class="item-price">¥550</div>
-                </div>
-            </div>
-            
-    
-            <!-- Drinks Section -->
-            <div class="tab-content" id="drinks">
-                <!-- Drink 1 -->
-                <div class="item">
-                    <div>
-                        <picture>
-                            <!-- For devices with a maximum width of 768px (generally, mobile devices) -->
-                            <source media="(max-width: 768px)" srcset="img/menu/beer-mobile.jpg">
-                            
-                            <!-- For devices wider than 768px (like desktops) -->
-                            <img src="img/menu/beer.jpg" alt="beer">
-                        </picture>
-                        <div class="item-name">Asahi Super Dry</div>
-                        <div class="item-description">Crisp and clear Japanese beer</div>
-                    </div>
-                    <div class="item-price">¥500</div>
-                </div>
-            
-                <!-- Drink 2 -->
-                <div class="item">
-                    <div>
-                        <picture>
-                            <!-- For devices with a maximum width of 768px (generally, mobile devices) -->
-                            <source media="(max-width: 768px)" srcset="img/menu/plum-drink-mobile.jpg">
-                            
-                            <!-- For devices wider than 768px (like desktops) -->
-                            <img src="img/menu/plum-drink.jpg" alt="plum drink">
-                        </picture>
-                        <div class="item-name">Umeshu</div>
-                        <div class="item-description">Sweet plum wine</div>
-                    </div>
-                    <div class="item-price">¥600</div>
-                </div>
-            
-                <!-- Drink 3 -->
-                <div class="item">
-                    <div>
-                        <picture>
-                            <!-- For devices with a maximum width of 768px (generally, mobile devices) -->
-                            <source media="(max-width: 768px)" srcset="img/menu/yuzu-mobile.jpg">
-                            
-                            <!-- For devices wider than 768px (like desktops) -->
-                            <img src="img/menu/yuzu.jpg" alt="Yuzu">
-                        </picture>
-                        <div class="item-name">Yuzu Shochu</div>
-                        <div class="item-description">Citrus-flavored distilled spirit</div>
-                    </div>
-                    <div class="item-price">¥700</div>
-                </div>
-            
-                <!-- Drink 4 -->
-                <div class="item">
-                    <div>
-                        <picture>
-                            <!-- For devices with a maximum width of 768px (generally, mobile devices) -->
-                            <source media="(max-width: 768px)" srcset="img/menu/highball-mobile.jpg">
-                            
-                            <!-- For devices wider than 768px (like desktops) -->
-                            <img src="img/menu/highball.jpg" alt="Highball">
-                        </picture>
-                        <div class="item-name">Matcha Highball</div>
-                        <div class="item-description">Refreshing cocktail</div>
-                    </div>
-                    <div class="item-price">¥750</div>
-                </div>
-
-            </div>
-            
         </div>
-    </div>
-</main>
+        <div>
+            <h1>Savoring the Essence: Menu Izakaya Oishi</h1>
+            <h2>Welcome to a symphony of tastes that are as authentic as they are imaginative</h2>
+        </div>
+        <div class="menu">
+            <div class="tabs">
+                <div class="tab" data-category="appetizers">Appetizers</div>
+                <div class="tab" data-category="main-courses">Main Courses</div>
+                <div class="tab" data-category="desserts">Desserts</div>
+                <div class="tab" data-category="drinks">Drinks</div>
+            </div>            
+
+            <div class="items">
+                <div class="item appetizers">
+                    <picture>
+                        <!-- For devices with a maximum width of 768px (generally, mobile devices) -->
+                        <source media="(max-width: 768px)" srcset="img/menu/edamame-mobile.jpg">
+                        
+                        <!-- For devices wider than 768px (like desktops) -->
+                        <img src="img/menu/edamame.jpg" alt="Edamame">
+                    </picture>
+                    <p class="item-title">Edamame</p>
+                    <p>Boiled green soybeans with salt</p>
+                    <p>¥500</p>
+                </div>
+                <div class="item appetizers">
+                    <picture>
+                        <!-- For devices with a maximum width of 768px (generally, mobile devices) -->
+                        <source media="(max-width: 768px)" srcset="img/menu/gyoza-mobile.jpg">
+                        
+                        <!-- For devices wider than 768px (like desktops) -->
+                        <img src="img/menu/gyoza.jpg" alt="Gyoza">
+                    </picture>
+                    <p class="item-title">Gyoza</p>
+                    <p>Pan-fried Japanese dumplings</p>
+                    <p>¥700</p>
+                </div>
+                <div class="item appetizers">
+                    <picture>
+                        <!-- For devices with a maximum width of 768px (generally, mobile devices) -->
+                        <source media="(max-width: 768px)" srcset="img/menu/takoyaki-mobile.jpg">
+                        
+                        <!-- For devices wider than 768px (like desktops) -->
+                        <img src="img/menu/takoyaki.jpg" alt="Takoyaki">
+                    </picture>
+                    <p class="item-title">Takoyaki</p>
+                    <p>Ball-shaped snack</p>
+                    <p>¥600</p>
+                </div>
+                <div class="item appetizers">
+                    <picture>
+                        <!-- For devices with a maximum width of 768px (generally, mobile devices) -->
+                        <source media="(max-width: 768px)" srcset="img/menu/karage-mobile.jpg">
+                        
+                        <!-- For devices wider than 768px (like desktops) -->
+                        <img src="img/menu/karage.jpg" alt="Karage">
+                    </picture>
+                    <p class="item-title">Karaage</p>
+                    <p>Japanese-style fried chicken</p>
+                    <p>¥800</p>
+                </div>
+
+                <div class="item main-courses" style="display: none;">
+                    <picture>
+                        <!-- For devices with a maximum width of 768px (generally, mobile devices) -->
+                        <source media="(max-width: 768px)" srcset="img/menu/grilled-mobile.jpg">
+                        
+                        <!-- For devices wider than 768px (like desktops) -->
+                        <img src="img/menu/grilled.jpg" alt="Grilled fish">
+                    </picture>
+                    <p class="item-title">Grilled Mackerel</p>
+                    <p>Grilled mackerel seasoned with salt</p>
+                    <p>¥1500</p>
+                </div>
+                <div class="item main-courses" style="display: none;">
+                    <picture>
+                        <!-- For devices with a maximum width of 768px (generally, mobile devices) -->
+                        <source media="(max-width: 768px)" srcset="img/menu/tonkatsu-mobile.jpg">
+                        
+                        <!-- For devices wider than 768px (like desktops) -->
+                        <img src="img/menu/tonkatsu.jpg" alt="Tonkatsu">
+                    </picture>
+                    <p class="item-title">Tonkatsu</p>
+                    <p>Crispy breaded pork cutlet</p>
+                    <p>¥1700</p>
+                </div>
+                <div class="item main-courses" style="display: none;">
+                    <picture>
+                        <!-- For devices with a maximum width of 768px (generally, mobile devices) -->
+                        <source media="(max-width: 768px)" srcset="img/menu/tempura-mobile.jpg">
+                        
+                        <!-- For devices wider than 768px (like desktops) -->
+                        <img src="img/menu/tempura.jpg" alt="Tempura">
+                    </picture>
+                    <p class="item-title">Tempura Udon</p>
+                    <p>Udon noodles</p>
+                    <p>¥1300</p>
+                </div> 
+                <div class="item main-courses" style="display: none;">
+                    <picture>
+                        <!-- For devices with a maximum width of 768px (generally, mobile devices) -->
+                        <source media="(max-width: 768px)" srcset="img/menu/unagi-mobile.jpg">
+                        
+                        <!-- For devices wider than 768px (like desktops) -->
+                        <img src="img/menu/unagi.jpg" alt="Unagi">
+                    </picture>
+                    <p class="item-title">Unagi Don</p>
+                    <p>Grilled eel</p>
+                    <p>¥2500</p>
+                </div>
+
+                <div class="item desserts" style="display: none;">
+                    <picture>
+                        <!-- For devices with a maximum width of 768px (generally, mobile devices) -->
+                        <source media="(max-width: 768px)" srcset="img/menu/doroyaki-mobile.jpg">
+                        
+                        <!-- For devices wider than 768px (like desktops) -->
+                        <img src="img/menu/doroyaki.jpg" alt="Doroyaki">
+                    </picture>
+                    <p class="item-title">Dorayaki Pancakes</p>
+                    <p>Fluffy pancakes</p>
+                    <p>¥500</p>
+                </div>
+                <div class="item desserts" style="display: none;">
+                    <picture>
+                        <!-- For devices with a maximum width of 768px (generally, mobile devices) -->
+                        <source media="(max-width: 768px)" srcset="img/menu/tiramisu-mobile.jpg">
+                        
+                        <!-- For devices wider than 768px (like desktops) -->
+                        <img src="img/menu/tiramisu.jpg" alt="Tiramisu">
+                    </picture>
+                    <p class="item-title">Matcha Tiramisu</p>
+                    <p>Fish-shaped cake</p>
+                    <p>¥400</p>
+                </div>
+                <div class="item desserts" style="display: none;">
+                    <picture>
+                        <!-- For devices with a maximum width of 768px (generally, mobile devices) -->
+                        <source media="(max-width: 768px)" srcset="img/menu/fish-dessert-mobile.jpg">
+                        
+                        <!-- For devices wider than 768px (like desktops) -->
+                        <img src="img/menu/fish-dessert.jpg" alt="Fish dessert">
+                    </picture>
+                    <p class="item-title">Taiyaki</p>
+                    <p>Layered dessert</p>
+                    <p>¥650</p>
+                </div>
+                <div class="item desserts" style="display: none;">
+                    <picture>
+                        <!-- For devices with a maximum width of 768px (generally, mobile devices) -->
+                        <source media="(max-width: 768px)" srcset="img/menu/mochi-mobile.jpg">
+                        
+                        <!-- For devices wider than 768px (like desktops) -->
+                        <img src="img/menu/mochi.jpg" alt="Mochi">
+                    </picture>
+                    <p class="item-title">Taiyaki</p>
+                    <p>Layered dessert</p>
+                    <p>¥650</p>
+                </div>
+
+                <div class="item drinks" style="display: none;">
+                    <picture>
+                        <!-- For devices with a maximum width of 768px (generally, mobile devices) -->
+                        <source media="(max-width: 768px)" srcset="img/menu/beer-mobile.jpg">
+                        
+                        <!-- For devices wider than 768px (like desktops) -->
+                        <img src="img/menu/beer.jpg" alt="Beers">
+                    </picture>
+                    <p class="item-title">Asahi Super Dry</p>
+                    <p>Crisp and clear Japanese beer</p>
+                    <p>¥500</p>
+                </div>
+                <div class="item drinks" style="display: none;">
+                    <picture>
+                        <!-- For devices with a maximum width of 768px (generally, mobile devices) -->
+                        <source media="(max-width: 768px)" srcset="img/menu/plum-drink-mobile.jpg">
+                        
+                        <!-- For devices wider than 768px (like desktops) -->
+                        <img src="img/menu/plum-drink.jpg" alt="Plum drink">
+                    </picture>
+                    <p class="item-title">Umeshu</p>
+                    <p>Sweet plum wine</p>
+                    <p>¥600</p>
+                </div>
+                <div class="item drinks" style="display: none;">
+                    <picture>
+                        <!-- For devices with a maximum width of 768px (generally, mobile devices) -->
+                        <source media="(max-width: 768px)" srcset="img/menu/yuzu-mobile.jpg">
+                        
+                        <!-- For devices wider than 768px (like desktops) -->
+                        <img src="img/menu/yuzu.jpg" alt="Yuzu">
+                    </picture>
+                    <p class="item-title">Yuzu Shochu</p>
+                    <p>Citrus-flavored distilled spirit</p>
+                    <p>¥700</p>
+                </div>
+                <div class="item drinks" style="display: none;">
+                    <picture>
+                        <!-- For devices with a maximum width of 768px (generally, mobile devices) -->
+                        <source media="(max-width: 768px)" srcset="img/menu/highball-mobile.jpg">
+                        
+                        <!-- For devices wider than 768px (like desktops) -->
+                        <img src="img/menu/highball.jpg" alt="Yuzu">
+                    </picture>
+                    <p class="item-title">Matcha Highball</p>
+                    <p>Refreshing cocktail</p>
+                    <p>¥750</p>
+                </div>
+            </div>
+        </div>
+    </main>
     <footer>
         <div class="upper-row">
-            <div class="address">
-                <a href="https://maps.app.goo.gl/okZDz75m9zWryP996" target="_blank"><p>Oishi Izakaya</p></a>
-                <p>2-chōme-3 Asakusa</p>
-                <p>Taito City</p>
-                <p>Tokyo 111-0032</p>
-            </div>
-    
-            <div class="contact">
-                <p>Contact Us:</p>
-                <a href="tel:+81123456789">Phone: +81 123-456-789</a>
-            </div>
-    
-            <div class="cta">
-                <a href="reservation.html">Book Your Table Now!</a>
-            </div>
-        </div>
-    
-        <div class="lower-row">
             <div class="social-icons">
                 <a href="https://www.facebook.com/" target="_blank" aria-label="Link to our Facebook page">
                     <i class="fab fa-facebook-f"></i>
@@ -355,7 +265,12 @@
                     <i class="fab fa-instagram"></i>
                 </a>
             </div>
-    
+            <div class="address">
+                <a href="https://maps.app.goo.gl/okZDz75m9zWryP996" target="_blank">Oishi Izakaya, 2-chōme-3 Asakusa, Taito City, Tokyo 111-0032</a>
+                <p><a href="tel:+81123456789">Phone: +81 123-456-789</a></p>
+            </div>
+        </div>
+        <div class="lower-row">
             <div class="copyright">
                 <p>&copy; 2023 Oishi Izakaya. All Rights Reserved. <a href="https://github.com/igordinuzzi/" target="_blank">Made by Igor ❤️</a></p>
             </div>
@@ -364,5 +279,7 @@
     <script src="js/fastclick.js"></script>
     <script src="js/scroll.js"></script>
     <script src="js/fixed-responsive-nav.js"></script>
+    <script src="js/menu.js"></script>
+
 </body>
 </html>

@@ -918,7 +918,7 @@ main {
   background-color: var(--secondary-color);
   color: #fff;
   padding: 40px;
-  text-align: center;
+  text-align: left; 
 }
 
 /* Styling for individual milestones */
@@ -926,16 +926,15 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  text-align: center;
   background-color: #fff; 
   padding: 20px;
   border-radius: 10px;
   width: 20%; 
-  margin: 0 5px; 
+  margin: 0 5px;
 }
 
 
-h2 {
+.milestone h2 {
   margin: 10px 0;
   color: var(--primary-color);
 }
@@ -957,22 +956,19 @@ h2 {
   display: block;
 }
 
-/* Styling for the close button */
-.close-button {
-  display: none;
-  background-color: #f0f0f0;
-  border: none;
-  cursor: pointer;
+.milestone-toggle-button {
   padding: 5px 10px;
-  border-radius: 5px;
+  background-color: var(--primary-color);
+  color: #fff;
+  border: none;
+  border-radius: 20px; /* Adjust the value to control the roundness */
+  cursor: pointer;
+  outline: none;
+  transition: background-color 0.3s;
 }
 
-.close-button:focus {
-  outline: none; /* Remove focus outline on click for better UX */
-}
-
-.milestone.active .close-button {
-  display: block;
+.milestone-toggle-button:hover {
+  background-color: var(--secondary-color);
 }
 
 
@@ -1006,4 +1002,16 @@ h2 {
       left: 50%;
       transform: translateX(-50%);
   }
+}
+
+/* error */
+
+.error {
+  text-align: center;
+  padding: 20px;
+  margin-bottom: 50px;
+}
+
+.content {
+  margin: 20px 0;
 }

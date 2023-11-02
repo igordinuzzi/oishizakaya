@@ -918,7 +918,6 @@ main {
   background-color: var(--secondary-color);
   color: #fff;
   padding: 40px;
-  text-align: left; 
 }
 
 /* Styling for individual milestones */
@@ -950,6 +949,7 @@ main {
   padding: 10px;
   position: relative;
   color: var(--text-color);
+  text-align: left;
 }
 
 .milestone.active .milestone-details {

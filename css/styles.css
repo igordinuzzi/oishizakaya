@@ -30,7 +30,6 @@ body {
 
 
 /* 2 columns grid */
-
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -47,11 +46,13 @@ body {
 .column {
   flex: 1;
   padding: 10px;
+  text-align: center; /* Center the image on all screens */
 }
 
 .text {
   padding: 20px;
   margin: 0 auto; 
+  text-align: left; /* Left-align the text on all screens */
 }
 
 .text p {
@@ -61,6 +62,19 @@ body {
 .image {
   max-width: 100%;
 }
+
+@media (max-width: 768px) {
+  /* Center the image on mobile screens */
+  .column {
+    text-align: center;
+  }
+  
+  /* Left-align the text within <p> elements on mobile screens */
+  .text p {
+    text-align: left;
+  }
+}
+
 
 
 /* Default font styles */
@@ -412,6 +426,17 @@ footer a:hover {
   font-size: 12px;
 }
 
+/* Add a class to the specific <p> elements you want to reduce font size for */
+.address p.small-font,
+.contact p.small-font {
+  font-size: 14px; 
+}
+
+/* Increase the size of "I" icons on mobile */
+.social-icons i {
+  font-size: 24px; 
+}
+
 @media (max-width: 768px) {
   .upper-row,
   .lower-row {
@@ -419,13 +444,15 @@ footer a:hover {
   }
 
   .address,
-  .contact {
+  .contact,
+  .address p {
     margin: 10px 0;
+    font-size: 14px; 
   }
 
-  /* Reduce the font size in the footer for mobile */
-  footer {
-    font-size: 14px; /* Adjust the font size as needed */
+  /* Reset the font size of "I" icons for mobile */
+  .social-icons i {
+    font-size: 32px;
   }
 }
 
@@ -581,12 +608,13 @@ footer a:hover {
 
 /* Style for individual reviews */
 .review {
-  color: #fff;
+  color: var(--text-color);
+  background-color: var(--background-color);
   padding: 20px;
   margin-bottom: 20px;
   text-align: center;
   border: 2px solid #fff; 
-  background: none; 
+  border-radius: 10px;
 }
 
 
@@ -600,6 +628,28 @@ footer a:hover {
 .review-content {
   font-size: 18px;
   font-weight: lighter;
+}
+
+.reviews-section h2 {
+  color: var(--background-color);
+}
+
+/* Style for stars */
+.stars {
+  font-size: 24px;
+  padding-left: 5px;
+  display: inline-block; 
+}
+
+.star {
+  color: var(--hover-color);
+  display: inline-block; 
+}
+
+hr {
+  width: 50%;
+  margin: 10px auto;
+  color: #D8D8D8;
 }
 
 /* Responsive design for smaller screens (e.g., mobile) */
@@ -856,3 +906,104 @@ main {
   padding-top: 60px; /* Adjust this value based on your header's height */
 }
 
+/* Timeline in about page */
+
+/* Styling for desktop */
+
+/* Styling for the timeline container */
+.timeline {
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  background-color: var(--secondary-color);
+  color: #fff;
+  padding: 40px;
+  text-align: center;
+}
+
+/* Styling for individual milestones */
+.milestone {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: #fff; 
+  padding: 20px;
+  border-radius: 10px;
+  width: 20%; 
+  margin: 0 5px; 
+}
+
+
+h2 {
+  margin: 10px 0;
+  color: var(--primary-color);
+}
+
+.date {
+  font-weight: bold; 
+  color: var(--text-color);
+  font-family: var(--secondary-font);
+}
+
+.milestone-details {
+  display: none;
+  padding: 10px;
+  position: relative;
+  color: var(--text-color);
+}
+
+.milestone.active .milestone-details {
+  display: block;
+}
+
+/* Styling for the close button */
+.close-button {
+  display: none;
+  background-color: #f0f0f0;
+  border: none;
+  cursor: pointer;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.close-button:focus {
+  outline: none; /* Remove focus outline on click for better UX */
+}
+
+.milestone.active .close-button {
+  display: block;
+}
+
+
+
+/* Styling for the close button */
+.close-button {
+  background-color: #f0f0f0; /* Button background color */
+  border: none;
+  cursor: pointer;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.close-button:focus {
+  outline: none; /* Remove focus outline on click for better UX */
+}
+
+
+/* Styling for mobile - make sure to use media queries to adapt for small screens */
+@media (max-width: 768px) {
+  .timeline {
+      flex-direction: column;
+  }
+
+  .milestone {
+      width: 100%;
+      margin-bottom: 20px;
+  }
+
+  .bullet {
+      left: 50%;
+      transform: translateX(-50%);
+  }
+}

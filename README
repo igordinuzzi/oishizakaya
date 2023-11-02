@@ -159,6 +159,21 @@ Testing was performed to ensure all navigation links on the respective pages, na
 
 Links on all pages navigated to the correct pages as exptected.
 
+| Test Case                 | Description                                                       | Expected Result                                                                  |
+|---------------------------|-------------------------------------------------------------------|----------------------------------------------------------------------------------|
+| 1. Homepage               | Verify that the homepage loads successfully.                      | Page loads without errors.                                                       |
+| 2. Navigation             | Test the navigation menu to ensure all links are functional.      | All links navigate to the correct pages.                                         |
+| 3. Menu Items             | Check if menu items can be viewed and selected.                   | Menu items are visible and selectable.                                           |
+| 4. Images                 | Confirm that images load properly and are not broken.             | All images display without errors.                                               |
+| 5. Contact Form           | Test the contact form for usability and submission.               | Form fields can be filled and submitted without errors.                          |
+| 6. Mobile Responsiveness  | Test the webpage on different screen sizes.                       | Content adjusts and remains readable on various screen sizes.                    |
+| 7. Browser Compatibility  | Verify that the webpage works on multiple browsers.               | Webpage functions correctly on popular browsers (Chrome, Firefox, Safari, etc.). |
+| 8. Social Links           | Check if social media links are functional.                       | Social media links open in new tabs and navigate to the correct profiles.        |
+| 9. Loading Speed          | Measure the loading speed of the webpage.                         | Page loads within an acceptable time frame.                                      |
+| 10. Error Handling        | Test for proper error messages when encountering issues.          | Appropriate error messages are displayed when errors occur.                      |
+
+**Usability testing**
+
 Conducting web usability testing for Oishi Izakaya was essential to ensure that our webpage provides a seamless and user-friendly experience across both mobile and desktop platforms. By gathering insights from real users, we aimed to identify any potential issues, enhance the overall usability, and validate the functionalities of our website. Maria, Carlos, and Sofia, all in the same age group, were among the individuals who participated in the testing process. Their valuable feedback and interactions with the webpage allowed us to make necessary improvements, ensuring that Oishi Izakaya's online presence meets the needs and expectations of our diverse user base. The three participants got the mission without any problem quickly, underscoring the effectiveness of our user-centered design approach. We are committed to delivering an exceptional online experience for our visitors, and web usability testing played a pivotal role in achieving this goal.
 
 _Scenario One - Mobile Responsiveness and Booking_

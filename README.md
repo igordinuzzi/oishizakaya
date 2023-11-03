@@ -282,8 +282,6 @@ Outcome: The webpage worked properly, providing the user with a smooth scrolling
 The user effectively achieved the mission of exploring the "About Me" page and accessing the opening 
 and closing milestones by clicking on the relevant tabs. The milestones' information was accurately presented.
 
-WIP ---------------------->
-
 **Lighthouse Report:**
 
 - Landing Page

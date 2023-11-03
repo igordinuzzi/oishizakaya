@@ -110,10 +110,6 @@ JavaScript also enables customization, enabling the timeline to align with speci
 - JavaScript functionality for menu tabs.
 - JavaScript functionality for the milestone timeline.
 
-## Wireframes
-![Wireframes](doc/wireframes.jpg)
-
-
 ## Technologies
 
 The Oishi website utilizes the following technologies:

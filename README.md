@@ -336,7 +336,33 @@ and closing milestones by clicking on the relevant tabs. The milestones' informa
   ![Thank you Lighthouse](doc/checker/contact.jpg)
 
 - 404 page
-  ![Thank you Lighthouse](doc/checker/404.jpg)    
+  ![Thank you Lighthouse](doc/checker/404.jpg)
+
+**Javascript Validation results:**
+
+- Button
+  ![JS Button](doc/js/button.jpg)
+
+- Fast click
+  ![JS fast click](doc/js/fastclick.jpg)
+
+ - Greetings
+  ![JS greetings](doc/js/greetings.jpg)
+
+  - Menu tabs
+  ![JS tab](doc/js/menu-tabs.jpg)
+
+  - Milestones
+  ![JS milestones](doc/js/milestone.jpg)
+
+  - Navigation
+  ![JS navigation](doc/js/navigation.jpg)
+
+  - Responsive Navigation
+  ![JS resp navigation](doc/js/responsive-navigaiton.jpg)
+
+  - Scrolling
+  ![JS scrolling](doc/js/scrolling.jpg)  
 
 ## Deployment:
 

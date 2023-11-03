@@ -4,6 +4,8 @@ Oishi Izakaya is not just a restaurant; it's an experience, a journey into the h
 Nestled at the intersection of tradition and innovation, our izakaya offers a delectable fusion of flavours that 
 will transport your taste buds to the vibrant streets of Japan.
 
+ ![Mockup](doc/mockup.jpg)
+
 What's in Store:
 
 - Menu: Explore our diverse menu, brimming with authentic Japanese dishes and creative twists. Whether you crave sushi, 
@@ -27,7 +29,8 @@ Live webpage [here](https://igordinuzzi.github.io/oishizakaya/)
 Navigation in a webpage is crucial for providing a user-friendly experience by enabling visitors to efficiently explore 
 and access the site's content, ultimately improving user engagement and satisfaction. 
 It helps users find information, products, or services, leading to increased usability and retention.
- ![Navigation](doc/header.jpg)
+ ![Navigation](doc/features/nav-desktop.jpg)
+ ![Navigation mobile](doc/features/nav-mobile.jpg)
   
 - Footer with social icons, link to map and direct link to Github.
 At the bottom of the page, visitors will discover social media icons leading to the restaurant's Facebook, Twitter, 
@@ -37,56 +40,65 @@ making it convenient for planning a visit. It also serves as a valuable resource
 the copyright details that emphasize the distinctiveness and ownership of the content. Moreover, 
 a direct link to their GitHub repository is provided, granting effortless access to the codebase 
 for those interested in exploring further or collaborating with the establishment.   
-  ![Footer](doc/footer.jpg)
+  ![Footer](doc/features/footer-desktop.jpg)
+  ![Footer mobile](doc/features/footer-mobile.jpg)
 
 - Favicon for easy recognition.
 The favicon is important in a webpage as it provides a recognizable visual identity in browser tabs, 
 enhancing brand visibility and user recognition, and it helps users quickly locate and return to the site.
-  ![Favicon](doc/favicon.jpg)
+  ![Favicon](doc/features/favicon.png)
   
 - Landing page 
 The landing page is structured with a two-column design, offering links to both the menu and reservation pages, 
 as well as dedicated sections for client reviews.
-    ![Welcome Page](doc/welcome.jpg)
+    ![Welcome Page](doc/features/index-desktop.jpg)
+    ![Welcome Page](doc/features/index-mobile.jpg)
 
 - Menu page
 On the menu page, users will have the capability to navigate through the menu by utilizing tabs for scrolling.
-    ![Welcome Page](doc/welcome.jpg)
+    ![Menu Page](doc/features/menu-desktop.jpg)
+    ![Menu mobile](doc/features/menu-mobile.jpg)
 
 - Book a table page
 The "Book a Table" page assists users in reserving a table, enabling them to select their preferred date and time.
-    ![Welcome Page](doc/welcome.jpg)
+    ![Book Page](doc/features/book-desktop.jpg)
+    ![Book mobile](doc/features/book-mobile.jpg)
 
 - About Oishi
 The "About Oishi Izakaya" page is dedicated to narrating the izakaya's story through a two-column layout, with 
 a specific section highlighting the significant milestones and history of the restaurant.
-    ![Welcome Page](doc/welcome.jpg)
+    ![About Page](doc/features/about-desktop.jpg)
+    ![About Page mobile](doc/features/about-mobile.jpg)
 
 - Contact
 The contact page provides users with various options, including obtaining directions and a map to reach the restaurant, 
 contacting them for inquiries, and displaying the restaurant's address via an embedded Google Map iframe.
-    ![Welcome Page](doc/welcome.jpg)
+    ![Contact Page](doc/features/contact-desktop.jpg)
+    ![Contact Page mobile](doc/features/contact-mobile.jpg)
   
  - 404 page - Custom 404 page and the auto-redirect feature to the homepage. The custom 404 page and auto-redirect
 feature has been seamlessly integrated. This ensures that when a user encounters a 404 error, they will experience 
 a smooth transition to the custom 404 page and subsequently be redirected to the homepage by a link. 
-  ![404](doc/404.jpg)
+    ![404](doc/features/404-desktop.jpg)
+    ![404 mobile](doc/features/404-mobile.jpg)
 
 - Breadcrumbs - Breadcrumbs are important for website navigation because they provide a clear trail of links that show users their current location within a website's hierarchy. 
 They enhance the user experience by helping visitors easily understand the site's structure, find their way back to previous pages, 
 and navigate to higher-level categories or the homepage. This improves usability, reduces user frustration, and increases the overall effectiveness of a website.
-  ![404](doc/404.jpg)
+      ![Breadcrumbs](doc/features/breadcrumbs.jpg)
 
 - Menu tabs - JavaScript in a menu tab enhances website interactivity, provides smooth animations, and enables real-time content updates, improving the user experience. 
 It allows for customization and responsiveness, ensuring a tailored and consistent navigation experience. Additionally, JavaScript can encourage user engagement, 
 gather feedback, and enhance the aesthetics of menu tabs, contributing to a more dynamic and visually appealing website.
-  ![404](doc/404.jpg)
+    ![Tab desktop](doc/features/menu-tabs-desktop.jpg)
+    ![Tab mobile](doc/features/menu-tabs-mobile.jpg)
 
 - Milestones - JavaScript in a milestone timeline enhances user interaction by enabling dynamic features like drag-and-drop functionality, 
 and animated transitions, making it more engaging. It allows for real-time updates to the timeline, 
 ensuring that users can see progress or changes as they occur, providing a more dynamic and informative experience. 
 JavaScript also enables customization, enabling the timeline to align with specific design and functionality requirements, enhancing its utility.
-  ![404](doc/404.jpg)  
+    ![Milestones desktop](doc/features/milestones-desktop.jpg)
+    ![Milestones mobile](doc/features/milestones-mobile.jpg) 
   
 
 ## Existing Features and Features to Implement
@@ -285,46 +297,46 @@ and closing milestones by clicking on the relevant tabs. The milestones' informa
 **Lighthouse Report:**
 
 - Landing Page
-  ![Landing Page Lighthouse](doc/01-light-index.jpg)
+  ![Landing Page Lighthouse](doc/lighthouse/index.jpg)
 
 
 - Menu page
-  ![Thank you Lighthouse](doc/02-light-help.jpg)
+  ![Thank you Lighthouse](doc/lighthouse/menu.jpg)
 
 - Book a table page
-  ![Thank you Lighthouse](doc/02-light-help.jpg)
+  ![Thank you Lighthouse](doc/lighthouse/book.jpg)
 
 - About page
-  ![Thank you Lighthouse](doc/02-light-help.jpg)
+  ![Thank you Lighthouse](doc/lighthouse/about.jpg)
 
 - Contact page
-  ![Thank you Lighthouse](doc/02-light-help.jpg)
+  ![Thank you Lighthouse](doc/lighthouse/contact.jpg)
 
 - 404 page
-  ![Thank you Lighthouse](doc/02-light-help.jpg)    
+  ![Thank you Lighthouse](doc/lighthouse/404.jpg)    
 
 
 **W3C Validator results:**
 
 
 - Landing Page
-  ![Landing Page Lighthouse](doc/01-light-index.jpg)
+  ![Landing Page Lighthouse](doc/checker/index.jpg)
 
 
 - Menu page
-  ![Thank you Lighthouse](doc/02-light-help.jpg)
+  ![Thank you Lighthouse](doc/checker/menu.jpg)
 
 - Book a table page
-  ![Thank you Lighthouse](doc/02-light-help.jpg)
+  ![Thank you Lighthouse](doc/checker/book.jpg)
 
 - About page
-  ![Thank you Lighthouse](doc/02-light-help.jpg)
+  ![Thank you Lighthouse](doc/checker/about.jpg)
 
 - Contact page
-  ![Thank you Lighthouse](doc/02-light-help.jpg)
+  ![Thank you Lighthouse](doc/checker/contact.jpg)
 
 - 404 page
-  ![Thank you Lighthouse](doc/02-light-help.jpg)    
+  ![Thank you Lighthouse](doc/checker/404.jpg)    
 
 ## Deployment:
 

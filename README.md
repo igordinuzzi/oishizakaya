@@ -68,10 +68,26 @@ contacting them for inquiries, and displaying the restaurant's address via an em
     ![Welcome Page](doc/welcome.jpg)
   
  - 404 page - Custom 404 page and the auto-redirect feature to the homepage. The custom 404 page and auto-redirect
-feature have been seamlessly integrated. This ensures that when a user encounters a 404 error, they will experience 
+feature has been seamlessly integrated. This ensures that when a user encounters a 404 error, they will experience 
 a smooth transition to the custom 404 page and subsequently be redirected to the homepage by a link. 
   ![404](doc/404.jpg)
 
+- Breadcrumbs - Breadcrumbs are important for website navigation because they provide a clear trail of links that show users their current location within a website's hierarchy. 
+They enhance the user experience by helping visitors easily understand the site's structure, find their way back to previous pages, 
+and navigate to higher-level categories or the homepage. This improves usability, reduces user frustration, and increases the overall effectiveness of a website.
+  ![404](doc/404.jpg)
+
+- Menu tabs - JavaScript in a menu tab enhances website interactivity, provides smooth animations, and enables real-time content updates, improving the user experience. 
+It allows for customization and responsiveness, ensuring a tailored and consistent navigation experience. Additionally, JavaScript can encourage user engagement, 
+gather feedback, and enhance the aesthetics of menu tabs, contributing to a more dynamic and visually appealing website.
+  ![404](doc/404.jpg)
+
+- Milestones - JavaScript in a milestone timeline enhances user interaction by enabling dynamic features like drag-and-drop functionality, 
+and animated transitions, making it more engaging. It allows for real-time updates to the timeline, 
+ensuring that users can see progress or changes as they occur, providing a more dynamic and informative experience. 
+JavaScript also enables customization, enabling the timeline to align with specific design and functionality requirements, enhancing its utility.
+  ![404](doc/404.jpg)  
+  
 
 ## Existing Features and Features to Implement
 

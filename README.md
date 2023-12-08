@@ -124,6 +124,66 @@ The Oishi website utilizes the following technologies:
 - GitHub for version control.
 - ChatGPT for content creation.
 
+### User Stories
+
+1. **As a food enthusiast,** I want to explore a Japanese Izakaya menu online so I can decide what to try before visiting.
+
+2. **As a potential customer,** I need an easy way to book a table at Oishi Izakaya, ensuring I have a reserved spot.
+
+3. **As a tourist in Tokyo,** I am looking for a local dining experience and want to find a Japanese tavern with an authentic atmosphere.
+
+4. **As a regular customer,** I want to keep up with any new additions to the menu or special offers at Oishi Izakaya.
+
+5. **As a social media user,** I want to follow Oishi Izakaya on platforms like Facebook, Twitter, and Instagram to stay connected.
+
+### User Flow
+
+1. **Landing on the Website**
+   - User is greeted with a vibrant homepage showcasing Oishi Izakaya’s ambiance.
+   - Sees the navigation menu with options like Home, Menu, Book a table, About Oishi, and Contact us.
+
+2. **Exploring the Menu**
+   - Clicks on 'Menu' to explore the variety of dishes and drinks offered.
+   - Browses through different categories and items.
+
+3. **Making a Reservation**
+   - Navigates to 'Book a table' to make a reservation.
+   - Fills in details like date, time, and number of guests.
+   - Confirms the booking and receives a confirmation.
+
+4. **Learning About the Izakaya**
+   - Visits 'About Oishi' to learn about the Izakaya’s history, values, and unique selling points.
+
+5. **Contacting the Izakaya**
+   - Chooses 'Contact us' for inquiries or feedback.
+   - Uses the provided form or contact details to reach out.
+
+6. **Following on Social Media**
+   - Scrolls to the footer to find social media icons.
+   - Follows Oishi Izakaya on selected platforms for updates and community engagement.
+
+### Task Flow for Booking a Table
+
+1. **Accessing the Reservation Section**
+   - User clicks on 'Book a table' from the navigation menu.
+
+2. **Filling in Reservation Details**
+   - Enters the required information: date, time, and number of guests.
+   - Optionally provides additional preferences or requests.
+
+3. **Submitting the Reservation**
+   - Reviews the entered details.
+   - Clicks on a button to confirm the booking.
+
+4. **Receiving Confirmation**
+   - Receives a notification or email confirming the reservation with the details.
+
+### Additional Notes
+
+- The website is designed to provide an immersive experience that reflects the ambiance and offerings of Oishi Izakaya.
+- Emphasis is placed on easy navigation and accessibility to cater to a diverse user base.
+- Social media integration and online reservation functionality enhance user engagement and convenience.
+
 ## Testing
 
 The website has been thoroughly tested on various devices and browsers:

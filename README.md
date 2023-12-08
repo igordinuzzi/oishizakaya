@@ -184,6 +184,14 @@ The Oishi website utilizes the following technologies:
 - Emphasis is placed on easy navigation and accessibility to cater to a diverse user base.
 - Social media integration and online reservation functionality enhance user engagement and convenience.
 
+### Wireframes
+ ![Book mobile](doc/wire/01.jpg)
+ ![Book mobile](doc/wire/02.jpg)
+ ![Book mobile](doc/wire/03.jpg)
+ ![Book mobile](doc/wire/04.jpg)
+ ![Book mobile](doc/wire/05.jpg)
+ ![Book mobile](doc/wire/palette.jpg)
+
 ## Testing
 
 The website has been thoroughly tested on various devices and browsers:

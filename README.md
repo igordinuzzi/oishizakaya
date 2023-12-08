@@ -192,6 +192,10 @@ The Oishi website utilizes the following technologies:
  ![Book mobile](doc/wire/05.jpg)
  ![Book mobile](doc/wire/palette.jpg)
 
+### Code snippets
+ ![Book mobile](doc/code/01.jpg)
+ ![Book mobile](doc/code/02.jpg)
+ 
 ## Testing
 
 The website has been thoroughly tested on various devices and browsers:

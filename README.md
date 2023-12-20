@@ -1,12 +1,28 @@
 # Oishi Izayaka
 
+## Table of Contents
+1. [Introduction](#oishi-izayaka)
+2. [What's in Store](#whats-in-store)
+3. [Features](#features)
+4. [Existing Features and Features to Implement](#existing-features-and-features-to-implement)
+5. [Technologies](#technologies)
+6. [User Stories](#user-stories)
+7. [User Flow](#user-flow)
+   - [Task Flow for Booking a Table](#task-flow-for-booking-a-table)
+8. [Wireframes](#wireframes)
+9. [Code Snippets](#code-snippets)
+10. [Testing](#testing)
+11. [Deployment](#deployment)
+12. [Credits](#credits)
+
+
 Oishi Izakaya is not just a restaurant; it's an experience, a journey into the heart of Japanese cuisine and culture. 
 Nestled at the intersection of tradition and innovation, our izakaya offers a delectable fusion of flavours that 
 will transport your taste buds to the vibrant streets of Japan.
 
  ![Mockup](doc/mockup.jpg)
 
-What's in Store:
+## What's in Store:
 
 - Menu: Explore our diverse menu, brimming with authentic Japanese dishes and creative twists. Whether you crave sushi, 
 sashimi, tempura, or more, our menu caters to every palate. Find your favourite dishes and discover new culinary delights.
@@ -124,7 +140,7 @@ The Oishi website utilizes the following technologies:
 - GitHub for version control.
 - ChatGPT for content creation.
 
-### User Stories
+## User Stories
 
 1. **As a food enthusiast,** I want to explore a Japanese Izakaya menu online so I can decide what to try before visiting.
 
@@ -136,7 +152,7 @@ The Oishi website utilizes the following technologies:
 
 5. **As a social media user,** I want to follow Oishi Izakaya on platforms like Facebook, Twitter, and Instagram to stay connected.
 
-### User Flow
+## User Flow
 
 1. **Landing on the Website**
    - User is greeted with a vibrant homepage showcasing Oishi Izakaya’s ambiance.
@@ -184,7 +200,7 @@ The Oishi website utilizes the following technologies:
 - Emphasis is placed on easy navigation and accessibility to cater to a diverse user base.
 - Social media integration and online reservation functionality enhance user engagement and convenience.
 
-### Wireframes
+## Wireframes
  ![Book mobile](doc/wire/01.jpg)
  ![Book mobile](doc/wire/02.jpg)
  ![Book mobile](doc/wire/03.jpg)
@@ -192,7 +208,18 @@ The Oishi website utilizes the following technologies:
  ![Book mobile](doc/wire/05.jpg)
  ![Book mobile](doc/wire/palette.jpg)
 
-### Code snippets
+## Learning Outcomes
+
+From a student's perspective, the Oishi Izakaya project offered a valuable opportunity for learning and development, particularly in the following areas:
+
+- Web Design and Development: Gaining practical experience in designing and developing a responsive and user-friendly website.
+- Creative Problem Solving: Overcoming design and development challenges to create a website that effectively conveys the essence of a Japanese izakaya.
+- Technical Skills Enhancement: Improving skills in HTML, CSS, JavaScript, and jQuery.
+- User Experience Design: Understanding the importance of creating a seamless and engaging user experience.
+- Project Management: Learning to manage a web development project from concept to deployment.
+- Cultural Exploration: Gaining insights into Japanese culture and cuisine, and translating that understanding into the design and content of the website. 
+
+## Code snippets
  ![Book mobile](doc/code/01.jpg)
  ![Book mobile](doc/code/02.jpg)
  
@@ -455,11 +482,10 @@ The live link can be found [here](https://igordinuzzi.github.io/oishizakaya/)
 
 ## Credits
 
-- Written content by ChatGPT
-- Iconography [here](https://fontawesome.com/v4/icons/)
+- Design and Development: Igor Dinuzzi
+- Content Creation: ChatGPT
+- Iconography: FontAwesome
+- Images: Sourced from Unsplash
 
-**Media:**
-
-- Images by Unsplash
 
 

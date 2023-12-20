@@ -201,6 +201,21 @@ The Oishi website utilizes the following technologies:
 - Social media integration and online reservation functionality enhance user engagement and convenience.
 
 ## Wireframes
+
+```css
+:root {
+  --main-font: 'Karla', sans-serif;
+  --secondary-font: 'Bitter', serif;
+  --primary-color: #76141C;
+  --secondary-color: #764214;
+  --background-color: #E0E0E0;
+  --text-color: #282c45;
+  --link-color: #350004;
+  --link-hover-color: #F8CACD;
+  --hover-color: #141E76;
+}
+```
+
  ![Book mobile](doc/wire/01.jpg)
  ![Book mobile](doc/wire/02.jpg)
  ![Book mobile](doc/wire/03.jpg)

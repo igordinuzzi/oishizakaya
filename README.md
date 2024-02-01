@@ -20,7 +20,7 @@ Oishi Izakaya is not just a restaurant; it's an experience, a journey into the h
 Nestled at the intersection of tradition and innovation, our izakaya offers a delectable fusion of flavours that 
 will transport your taste buds to the vibrant streets of Japan.
 
- ![Mockup](doc/mockup.jpg)
+ ![Mockup](doc/mockup.png)
 
 ## What's in Store:
 
